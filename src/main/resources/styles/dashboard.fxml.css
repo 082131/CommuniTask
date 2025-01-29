@@ -1,0 +1,58 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.mainFxmlClass {
+    -fx-font-family: 'Poppins';
+}
+
+.sidePanel{
+    -fx-background-color: white;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 5, 0, 0, 2);
+}
+.btn {
+    -fx-background-color: white; /* Sets a bold blue background */
+    -fx-border-radius: 0; /* Ensures no rounded corners */
+    -fx-background-radius: 0; /* Keeps background edges sharp */
+    -fx-text-fill: #004AAD; /* Makes text white for contrast */
+    -fx-padding: 10px 20px; 
+    -fx-font-size: 17px; /* Sets a modern font size */
+    -fx-font-weight: bold; /* Highlights the button text */
+    -fx-cursor:hand;
+}
+
+.btn:hover{
+    -fx-background-color: #004AAD;
+    -fx-text-fill:#FFFFFF;
+}
+
+.logoutBtn{
+    -fx-background-color: white; /* Sets a bold blue background */
+    -fx-border-radius: 0; /* Ensures no rounded corners */
+    -fx-background-radius: 0; /* Keeps background edges sharp */
+    -fx-text-fill: #004AAD;
+    -fx-font-weight: bold;
+    -fx-font-size: 14px;
+    -fx-cursor:hand;
+}
+
+.logoutBtn:hover{
+    -fx-background-color: #004AAD;
+    -fx-text-fill:#FFFFFF;
+}
+.close, .hide{
+    -fx-background-color: transparent;
+    -fx-cursor:hand;
+}
+
+.close:hover{
+    -fx-background-color: #ff3547;
+}
+
+.hide:hover{
+    -fx-background-color: #ff3547;
+}
+
+.accbtn{
+    
+}

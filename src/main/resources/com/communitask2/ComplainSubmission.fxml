@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import java.net.URL?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="640.0" prefWidth="360.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.communitask2.ComplainSubmissionController">
+    <stylesheets>
+        <URL value="@/styles/complaintsubmission.css" />
+    </stylesheets>
+   <BorderPane prefHeight="640.0" prefWidth="360.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <top>
+         <Pane prefHeight="640.0" prefWidth="360.0" style="-fx-background-color: #FFFFFF;" styleClass="txtDefault" stylesheets="@../../styles/complaintsubmission.css" BorderPane.alignment="CENTER">
+            <children>
+                  <Label layoutX="31.0" layoutY="378.0" styleClass="txtDefaul" stylesheets="@../../styles/complaintsubmission.css" text="Photo:" />
+                  <Button fx:id="uploadPhotoButton" layoutX="27.0" layoutY="400.0" prefHeight="34.0" prefWidth="140.0" styleClass="btnDefault" stylesheets="@../../styles/complaintsubmission.css" text="Upload Photo" />
+         
+                 <Button fx:id="submitButton" layoutX="27.0" layoutY="460.0" onMouseClicked="#recordInfo" prefHeight="25.0" prefWidth="304.0" styleClass="btnSubmit" stylesheets="@../../styles/complaintsubmission.css" text="Submit">
+                  <font>
+                     <Font name="HandoTrial-Bold" size="15.0" />
+                  </font></Button>
+                 <Label layoutX="74.0" layoutY="81.0" styleClass="txtTitle" stylesheets="@../../styles/complaintsubmission.css" text="Submit Complain" textAlignment="CENTER" textFill="#f2f2f2" />
+                  <Label layoutX="27.0" layoutY="237.0" styleClass="txtDefaul" stylesheets="@../../styles/complaintsubmission.css" text="Description:">
+                  <font>
+                     <Font name="HandoTrial-Regular" size="11.0" />
+                  </font></Label>
+                  <Label layoutX="25.0" layoutY="169.0" styleClass="txtDefaul" stylesheets="@../../styles/complaintsubmission.css" text="Complaint Title:">
+                  <font>
+                     <Font name="HandoTrial-Regular" size="12.0" />
+                  </font></Label>
+                  <TextField fx:id="complaintTitleField" layoutX="27.0" layoutY="193.0" onMouseClicked="#recordInfo" prefHeight="30.0" prefWidth="309.0" promptText="  Enter the title of the complaint" styleClass="fieldDefault" stylesheets="@../../styles/complaintsubmission.css" />
+               <Text boundsType="VISUAL" fill="#004aad" layoutX="135.0" layoutY="59.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Comm">
+                  <font>
+                     <Font size="31.0" />
+                  </font>
+                  <styleClass>
+                     <String fx:value="txtTitle" />
+                     <String fx:value="communiTaskTxt" />
+                  </styleClass>
+               </Text>
+               <Text boundsType="VISUAL" fill="#e84949" layoutX="178.0" layoutY="59.0" strokeType="OUTSIDE" strokeWidth="0.0" text="uni">
+                  <font>
+                     <Font size="31.0" />
+                  </font>
+                  <styleClass>
+                     <String fx:value="txtTitle" />
+                     <String fx:value="communiTaskTxt" />
+                  </styleClass>
+               </Text>
+               <Text boundsType="VISUAL" fill="#e69d1e" layoutX="199.0" layoutY="59.0" strokeType="OUTSIDE" strokeWidth="0.0" text="TASK" wrappingWidth="89.947265625">
+                  <font>
+                     <Font size="31.0" />
+                  </font>
+                  <styleClass>
+                     <String fx:value="txtTitle" />
+                     <String fx:value="communiTaskTxt" />
+                  </styleClass>
+               </Text>
+               <Label layoutX="187.0" layoutY="378.0" styleClass="txtDefaul" stylesheets="@../../styles/complaintsubmission.css" text="Type:">
+                  <font>
+                     <Font name="HandoTrial-Regular" size="11.0" />
+                  </font></Label>
+               <ComboBox layoutX="188.0" layoutY="400.0" maxHeight="35.0" maxWidth="146.0" prefHeight="35.0" prefWidth="146.0" promptText="Select a Type" styleClass="cbType" stylesheets="@../../styles/complaintsubmission.css" visibleRowCount="5">
+                  <cursor>
+                     <Cursor fx:constant="OPEN_HAND" />
+                  </cursor>
+               </ComboBox>
+               <TextField fx:id="complainDescription" alignment="TOP_LEFT" layoutX="27.0" layoutY="258.0" prefHeight="100.0" prefWidth="310.0" promptText="  Enter the title of the complaint" styleClass="fieldDefault" stylesheets="@../../styles/complaintsubmission.css" />
+               <Button fx:id="cancelBtn" layoutX="27.0" layoutY="500.0" onMouseClicked="#backToMainScene" prefHeight="25.0" prefWidth="304.0" styleClass="btnCancel" stylesheets="@../../styles/complaintsubmission.css" text="Cancel">
+                  <font>
+                     <Font name="HandoTrial-Bold" size="15.0" />
+                  </font></Button>
+               <ImageView fx:id="backBtn" fitHeight="33.0" fitWidth="42.0" layoutX="31.0" layoutY="32.0" onMouseClicked="#backToMainScene" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                     <Image url="@../../images.png/backbutton.png" />
+                  </image>
+                  <cursor>
+                     <Cursor fx:constant="OPEN_HAND" />
+                  </cursor>
+               </ImageView>
+            </children>
+         </Pane>
+      </top>
+   </BorderPane>
+</AnchorPane>

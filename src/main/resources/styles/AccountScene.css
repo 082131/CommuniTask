@@ -1,0 +1,79 @@
+@font-face {
+    font-family: 'Poppins';
+    src: url("fonts/Poppins-ExtraBold.woff") format("woff");
+    font-weight: 800;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url("fonts/Poppins-Regular.woff") format("woff");
+    font-weight: 400;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url("fonts/Poppins-SemiBold.woff") format("woff");
+    font-weight: 600;
+    font-display: swap;
+}
+
+.mainPain{
+    -fx-font-family: "Poppins";
+    -fx-text-fill: #1C1C1C;
+    -fx-font-weight: 400;
+}
+
+.btnTwn1{
+    -fx-background-color: #F0F0F0;
+    -fx-border-radius: 0; /* Ensures no rounded corners */
+    -fx-background-radius: 20; /* Keeps background edges sharp */
+    -fx-text-fill: #004AAD; /* Makes text white for contrast */
+    -fx-padding: 10px 20px;
+    -fx-font-size: 15px; /* Sets a modern font size */
+    -fx-font-weight: bold; /* Highlights the button text */
+    -fx-cursor:hand;
+}
+
+.btnTwn2{
+    -fx-background-color: #004AAD;
+    -fx-border-radius: 0; /* Ensures no rounded corners */
+    -fx-background-radius: 20; /* Keeps background edges sharp */
+    -fx-text-fill: #FFFFFF; /* Makes text white for contrast */
+    -fx-padding: 10px 20px;
+    -fx-font-size: 15px; /* Sets a modern font size */
+    -fx-font-weight: bold; /* Highlights the button text */
+    -fx-cursor:hand;
+}
+
+
+.btnTwn1:hover{
+    -fx-background-color: #004AAD;
+    -fx-text-fill:#FFFFFF;
+    -fx-font-weight: 800;
+}
+.btnTwn2:hover{
+    -fx-background-color: #F0F0F0;
+    -fx-text-fill:#004AAD;
+    -fx-font-weight: 800;
+}
+.defaultTxtField{
+    -fx-background-color: none;
+    -fx-background-radius: 9;
+    -fx-border-radius: 9;
+    -fx-border-color: #004AAD;
+    -fx-text-fill: #b1b1b1;
+}
+
+.defaultTxt{
+    -fx-font-family: "Poppins" !important;
+    -fx-font-weight: 400;
+}
+.defaultBtn{
+    -fx-font-family: Poppins;
+    -fx-background-radius: 9;
+    -fx-background-color: #363B38;
+    -fx-text-fill: white;
+    -fx-font-weight: 800;
+}

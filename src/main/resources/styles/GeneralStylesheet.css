@@ -1,0 +1,212 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : Jan 26, 2025, 2:24:51 PM
+    Author     : ADMIN
+*/
+
+
+.mainPane {
+    -fx-font-family: 'Poppins';
+    -fx-text-fill: #000000;
+}
+
+.txtTitle{
+    -fx-font-weight: bold;
+    -fx-font-family: 'Poppins';
+}
+.txtNorm {
+    -fx-background-radius: 10; 
+    -fx-border-radius: 20;     
+    -fx-border-width: 1;       
+    -fx-border-color: #000000; 
+    -fx-background-color: #ffffff; 
+    -fx-padding: 5;            
+}
+.checkbox .box {      
+    -fx-border-radius: 0;        
+    -fx-background-radius: 0;    
+    -fx-background-color: lightgray; 
+}
+
+.bulletinTxt{
+    -fx-font-weight: bold;
+    -fx-font-family: 'Poppins';
+    -fx-font-size: 19px;
+}
+
+.defaultTxtBold{
+    -fx-font-family: 'Poppins';
+    -fx-font-weight: bold;
+    -fx-font-size: 15px;
+}
+
+.defaultTxtItalic{
+    -fx-font-family: 'Poppins';
+    -fx-font-style: italic;
+}
+
+.defaultTxtItalicBold{
+    -fx-font-family: 'Poppins';
+    -fx-font-weight: bold;
+    -fx-font-style: italic;
+}
+
+.checkbox .box:selected {
+    -fx-background-color: gray; 
+    -fx-mark-color: white;      
+}
+
+.normalTxt, .frgtnpassTxt {
+    -fx-font-size: 12.97px;
+    -fx-text-fill: #000000; 
+    -fx-font-family: 'Poppins';
+    -fx-font-weigth: 500;
+}
+
+frgtnpassTxt:hover {
+    -fx-text-fill: #004AAD; 
+    -fx-cursor: hand; 
+}
+.quoteTxt{
+    -fx-font-family: 'Poppins';
+    -fx-font-style: italic;
+}
+
+.buttons, .fields{
+    -fx-font-family: 'Poppins';
+    -fx-text-fill: #000000;
+    -fx-font-weight: bold;
+    -fx-background-radius: 20; 
+    -fx-border-radius: 20;     
+    -fx-border-width: 1;       
+    -fx-background-color: #93B4D5; 
+    -fx-padding: 5;   
+}
+
+.btnRegister {
+    -fx-background-color: #004AAD;
+    -fx-text-fill: #FFFFFF;
+}
+
+.buttons:hover {
+    -fx-border-color: #000000;
+    -fx-background-color: #FFFFFF; 
+    -fx-text-fill: #000000; 
+    -fx-padding: 5, 10;
+}
+.btnMain{
+    -fx-font-family: 'Poppins';
+    -fx-font-weight: 500;
+    -fx-text-fill:#004AAD;
+}
+
+
+.scrollPane {
+    -fx-background-color: #fafafa; 
+    -fx-padding: 10px;                 
+}
+
+.gradient {
+    -fx-background-color: linear-gradient(from 0% 0% to 100% 100%, #E69D1E, #FF6347);
+    -fx-border-color: transparent;
+}
+
+.errMess{
+    -fx-text-fill: #FF0000;
+    -fx-font-style: italic;
+}
+
+
+.subheading {
+    -fx-font-size: 12.97px;
+    -fx-text-fill: #868686; 
+    -fx-font-family: 'Poppins';
+    -fx-font-weight: 700;
+}
+
+.headerProfile {
+    -fx-background-color: #FFFFFF;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.2), 5, 0, 0, 3);
+    -fx-background-radius: 0;
+}
+
+.footerShape{
+    -fx-background-color: blue;
+    -fx-background-radius: 15;
+    -fx-border-radius: 15;
+    -fx-border-color: blue;
+    -fx-border-width: 2;
+    -fx-padding: 10px;
+}
+
+.homeIMG {
+    -fx-background-radius: 15; 
+    -fx-border-radius: 15; 
+    -fx-border-color: none;
+    -fx-border-width: 1px;
+}
+
+.anchorDown{
+    -fx-padding: 10; 
+    -fx-alignment: center; 
+    -fx-border-width: 1px 0 0 0; 
+    -fx-pref-height: 50; 
+}
+
+
+.iconbtn {
+    -fx-padding: 5;
+    -fx-border-radius: 15px; 
+    -fx-background-color: transparent; 
+}
+
+.iconbtn:hover {
+    -fx-background-color: white;
+    -fx-background-radius: 15px;
+    -fx-background-insets: 5;
+    -fx-border-radius: 15px;
+    -fx-background-size: cover; 
+    -fx-background-position: center;
+}
+
+.iconBorder{
+    .iconBorder {
+    -fx-border-width: 1px;
+    -fx-border-color: black;
+    -fx-border-style: solid; 
+    -fx-border-radius: 3px; 
+    -fx-padding: 5px;      
+}
+}
+
+.noEditTxtField {
+    -fx-background-color: transparent; /* Removes the background */
+    -fx-border-color: transparent;    /* Removes the border */
+    -fx-focus-color: transparent;     /* Removes focus highlight */
+    -fx-padding: 0;                   /* Removes internal padding */
+    -fx-text-fill: #e1dede;             /* Ensures text color is visible */
+}
+
+.scroll-pane, .scroll-bar, .corner {
+    -fx-background-color: transparent;
+    -fx-padding: 0;
+}
+
+.scroll-pane .scroll-bar:vertical, .scroll-pane .scroll-bar:horizontal {
+    -fx-opacity: 0; 
+    -fx-background-color: transparent; 
+    -fx-padding:0;
+}
+.scroll-bar .corner{
+    -fx-padding:0;
+}
+.statementFormat{
+    -fx-font-size: 6px;
+    -fx-text-fill: #aea8a8; 
+    -fx-font-family: 'Poppins';
+    -fx-font-style: italic;
+}
+

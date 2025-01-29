@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import java.net.URL?>
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="1060.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.communitask2.DashboardController">
+    <stylesheets>
+        <URL value="@/styles/dashboard.fxml.css" />
+    </stylesheets>
+   <children>
+      <BorderPane prefHeight="603.0" prefWidth="1299.0">
+         <top>
+            <Pane prefHeight="607.0" prefWidth="1299.0" BorderPane.alignment="CENTER">
+               <children>
+                  <StackPane layoutX="332.0" prefHeight="610.0" prefWidth="965.0">
+                     <children>
+                        <Pane prefHeight="200.0" prefWidth="200.0">
+                           <children>
+                              <Button layoutX="938.0" layoutY="2.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" styleClass="close" stylesheets="@../../styles/dashboard.fxml.css" text="x">
+                                 <font>
+                                    <Font name="Arial Bold" size="13.0" />
+                                 </font></Button>
+                              <Button layoutX="910.0" layoutY="1.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" styleClass="close" stylesheets="@../../styles/dashboard.fxml.css" text="—">
+                                 <font>
+                                    <Font name="Arial Black" size="12.0" />
+                                 </font>
+                              </Button>
+                           </children></Pane>
+                        <BorderPane prefHeight="200.0" prefWidth="200.0">
+                           <center>
+                              <VBox fx:id="graphContainer" layoutX="50.0" layoutY="50.0" prefHeight="400.0" prefWidth="600.0" />
+                           </center>
+                           <top>
+                              <Pane prefHeight="606.0" prefWidth="965.0" styleClass="graphPane" BorderPane.alignment="CENTER">
+                                 <children>
+                                    <VBox layoutX="147.0" layoutY="189.0" prefHeight="200.0" prefWidth="100.0" styleClass="graphContainer" />
+                                    <BarChart layoutX="45.0" layoutY="79.0" prefHeight="274.0" prefWidth="366.0">
+                                      <xAxis>
+                                        <CategoryAxis side="BOTTOM" />
+                                      </xAxis>
+                                      <yAxis>
+                                        <NumberAxis side="LEFT" />
+                                      </yAxis>
+                                    </BarChart>
+                                 </children></Pane>
+                           </top>
+                        </BorderPane>
+                     </children>
+                  </StackPane>
+                  <Pane prefHeight="608.0" prefWidth="332.0" stylesheets="@../../styles/dashboard.fxml.css">
+                     <styleClass>
+                        <String fx:value="sidePanel" />
+                        <String fx:value="mainFxmlClass" />
+                     </styleClass>
+                     <children>
+                        <Button layoutY="375.0" mnemonicParsing="false" prefHeight="71.0" prefWidth="332.0" stylesheets="@../../styles/dashboard.fxml.css" text="HOME">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                           <styleClass>
+                              <String fx:value="btn" />
+                              <String fx:value="mainFxmlClass" />
+                           </styleClass>
+                        </Button>
+                        <Button layoutY="304.0" mnemonicParsing="false" prefHeight="71.0" prefWidth="332.0" stylesheets="@../../styles/dashboard.fxml.css" text="DASHBOARD">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                           <styleClass>
+                              <String fx:value="btn" />
+                              <String fx:value="mainFxmlClass" />
+                           </styleClass>
+                        </Button>
+                        <Button layoutX="1.0" layoutY="233.0" mnemonicParsing="false" prefHeight="71.0" prefWidth="331.0" stylesheets="@../../styles/dashboard.fxml.css" text="ACCOUNT">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                           <styleClass>
+                              <String fx:value="btn" />
+                              <String fx:value="mainFxmlClass" />
+                           </styleClass>
+                        </Button>
+                        <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="93.0" layoutY="47.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../../../../../Downloads/circleicon.png" />
+                           </image>
+                        </ImageView>
+                        <Button layoutY="566.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="332.0" styleClass="logoutBtn" stylesheets="@../../styles/dashboard.fxml.css" text="LOGOUT">
+                           <font>
+                              <Font size="11.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </Pane>
+               </children>
+            </Pane>
+         </top>
+      </BorderPane>
+   </children>
+</AnchorPane>

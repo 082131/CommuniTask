@@ -1,0 +1,115 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('Poppins-SemiBold.woff2') format('woff2'),
+        url('Poppins-SemiBold.woff') format('woff');
+}
+
+.txtTitle{
+    -fx-font-family:'Poppins';
+    -fx-text-fill: #000000;
+    -fx-font-weight: bold;
+    -fx-font-size: 25px;
+}
+
+.txtDefaul{
+    -fx-font-family:'Poppins';
+    -fx-text-fill: #363636;
+    -fx-font-size: 12px;
+    -fx-font-weight: 700;
+}
+
+.communiTaskTxt{
+    -fx-font-family:'Poppins';
+    -fx-font-weight: bold;
+    -fx-font-size: 14px;
+}
+
+.fieldDefault{
+    -fx-background-radius: 5px; 
+    -fx-border-radius: 5px;     
+    -fx-border-width: 1;       
+    -fx-border-color: #000000; 
+    -fx-background-color: #ffffff; 
+    -fx-padding: 5;            
+}
+
+
+.btnDefault{
+    -fx-font-family: 'Poppins';
+    -fx-text-fill: #818181;
+    -fx-background-radius: 8; 
+    -fx-border-radius: 8;          
+    -fx-background-color: #f2f2f2;
+    -fx-padding: 5, 10;   
+}
+.textareaDefault {
+   -fx-background-color: #f0f0f0; /* Light gray fill color */
+    -fx-border-color: transparent; /* Completely remove the border color */
+    -fx-border-width: 0; /* Ensure no border width */
+    -fx-background-radius: 5px; /* Rounded corners for background */
+    -fx-padding: 5px; /* Padding for inner text */
+    -fx-font-size: 14px; /* Font size of the text */
+    -fx-prompt-text-fill: #aaa; /* Color of the prompt text */
+    -fx-text-fill: #333; /* Color of the input text */
+    -fx-focus-color: transparent; /* Remove border on focus */
+    -fx-faint-focus-color: transparent; /* Ensure no faint border appears */
+}
+
+.status{
+    -fx-font-family: 'Poppins';
+    -fx-text-fill: #363636;
+    -fx-background-radius: 8; 
+    -fx-border-radius: 8; 
+    -fx-font-weight: bold;
+    -fx-background-color: #f2f2f2;
+    -fx-padding: 5, 10;   
+}
+
+.btnSubmit {
+    -fx-background-color: #004AAD;
+    -fx-text-fill: #FFFFFF;
+    -fx-font-weight: bold;
+    -fx-border-radius: 10px;
+    -fx-background-radius: 10px;
+}
+
+.btnSubmit:hover {
+    -fx-border-color: #000000;
+    -fx-background-color: #FFFFFF; 
+    -fx-text-fill: #000000; 
+    -fx-padding: 5, 10;
+}
+
+.btnCancel{
+    -fx-font-family: 'Poppins';
+    -fx-text-fill: #FFFFFF;
+    -fx-font-weight: bold;
+    -fx-background-radius: 20;
+    -fx-border-radius: 20;     
+    -fx-border-width: 1;       
+    -fx-background-color: #93B4D5; 
+    -fx-padding: 5;   
+}
+
+.btnCancel:hover {
+    -fx-border-color: #000000;
+    -fx-background-color: #FFFFFF; 
+    -fx-text-fill: #000000; 
+    -fx-padding: 5, 10;
+}
+
+.cbType{
+    -fx-font-family: 'Poppins';
+    -fx-text-fill: #818181;
+    -fx-background-radius: 10; 
+    -fx-border-radius: 10;          
+    -fx-background-color: #f2f2f2;
+    -fx-padding: 5;   
+    fx-font-size: 14px;
+}
+
+
