@@ -1,0 +1,59 @@
+
+.mainPain{
+    -fx-font-family: "Poppins";
+    -fx-text-fill: #1C1C1C;
+    -fx-font-weight: 400;
+}
+
+.btnTwn1{
+    -fx-background-color: #F0F0F0;
+    -fx-border-radius: 0; 
+    -fx-background-radius: 20; 
+    -fx-text-fill: #004AAD; 
+    -fx-padding: 10px 20px;
+    -fx-font-size: 15px; 
+    -fx-font-weight: bold; 
+    -fx-cursor:hand;
+}
+
+.btnTwn2{
+    -fx-background-color: #004AAD;
+    -fx-border-radius: 0; 
+    -fx-background-radius: 20; 
+    -fx-text-fill: #FFFFFF; 
+    -fx-padding: 10px 20px;
+    -fx-font-size: 15px; 
+    -fx-font-weight: bold;
+    -fx-cursor:hand;
+}
+
+
+.btnTwn1:hover{
+    -fx-background-color: #004AAD;
+    -fx-text-fill:#FFFFFF;
+    -fx-font-weight: 800;
+}
+.btnTwn2:hover{
+    -fx-background-color: #F0F0F0;
+    -fx-text-fill:#004AAD;
+    -fx-font-weight: 800;
+}
+.defaultTxtField{
+    -fx-background-color: none;
+    -fx-background-radius: 9;
+    -fx-border-radius: 9;
+    -fx-border-color: #004AAD;
+    -fx-text-fill: #000000;
+}
+
+.defaultTxt{
+    -fx-font-family: "Poppins" !important;
+    -fx-font-weight: 400;
+}
+.defaultBtn{
+    -fx-font-family: Poppins;
+    -fx-background-radius: 9;
+    -fx-background-color: #363B38;
+    -fx-text-fill: white;
+    -fx-font-weight: 800;
+}

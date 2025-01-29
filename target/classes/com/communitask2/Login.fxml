@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="scene1AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="640.0" prefWidth="360.0" styleClass="mainPane" stylesheets="@../../styles/GeneralStylesheet.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.communitask2.LoginController">
+   <children>
+      <BorderPane prefHeight="1015.0" prefWidth="360.0" style="-fx-background-color: #FFFFFF;" stylesheets="@../../styles/GeneralStylesheet.css" AnchorPane.bottomAnchor="-375.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <top>
+            <Pane prefHeight="1016.0" prefWidth="360.0" BorderPane.alignment="CENTER">
+               <children>
+                  <StackPane prefHeight="640.0" prefWidth="360.0">
+                     <children>
+                        <Pane fx:id="RegisterPane2" onMouseClicked="#ToRegisterPane1" prefHeight="682.0" prefWidth="360.0" style="-fx-background-color: #FFFFFF;">
+                           <children>
+                              <ScrollPane fitToWidth="true" prefHeight="669.0" prefWidth="360.0" style="-fx-background-color: #FFFFFF;">
+                                <content>
+                                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="1027.0" prefWidth="347.0">
+                                       <children>
+                                          <Pane onMouseClicked="#ToRegisterAcc" prefHeight="1017.0" prefWidth="360.0" styleClass="mainPaneColor" stylesheets="@../../styles/registerscene.css">
+                                             <children>
+                                                <Text layoutX="75.0" layoutY="75.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="txtTitle" text="Registration" />
+                                                <ImageView fx:id="backBtn" fitHeight="38.0" fitWidth="38.0" layoutX="23.0" layoutY="44.0" onMouseClicked="#ToRegisterPane1" pickOnBounds="true" preserveRatio="true" styleClass="btnHover">
+                                                   <image>
+                                                      <Image url="@../../images.png/backbutton.png" />
+                                                   </image>
+                                                   <cursor>
+                                                      <Cursor fx:constant="HAND" />
+                                                   </cursor>
+                                                </ImageView>
+                                                <ImageView fitHeight="569.0" fitWidth="289.0" layoutX="40.0" layoutY="99.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@../../images.png/Registration.shape.png" />
+                                                   </image>
+                                                </ImageView>
+                                                <TextField id="textNorm" fx:id="SurnameField" layoutX="57.0" layoutY="142.0" prefHeight="40.0" prefWidth="249.0" styleClass="defaultTxtField" stylesheets="@../../styles/registerscene.css">
+                                                   <effect>
+                                                      <ColorAdjust />
+                                                   </effect>
+                                                </TextField>
+                                                <Text layoutX="57.0" layoutY="131.0" lineSpacing="1.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="defaultTxt" text="Surname">
+                                                   <font>
+                                                      <Font name="HandoTrial-Regular" size="11.0" />
+                                                   </font>
+                                                </Text>
+                                                <TextField id="textNorm" fx:id="FirstnameField" layoutX="57.0" layoutY="219.0" prefHeight="40.0" prefWidth="249.0" styleClass="defaultTxtField" stylesheets="@../../styles/registerscene.css">
+                                                   <effect>
+                                                      <ColorAdjust />
+                                                   </effect>
+                                                </TextField>
+                                                <Text layoutX="57.0" layoutY="209.0" lineSpacing="1.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="defaultTxt" text="First Name" wrappingWidth="52.884117126464844">
+                                                   <font>
+                                                      <Font name="HandoTrial-Regular" size="11.0" />
+                                                   </font>
+                                                </Text>
+                                                <TextField id="textNorm" fx:id="MiddlenameField" layoutX="57.0" layoutY="301.0" prefHeight="40.0" prefWidth="249.0" styleClass="defaultTxtField" stylesheets="@../../styles/registerscene.css">
+                                                   <effect>
+                                                      <ColorAdjust />
+                                                   </effect>
+                                                </TextField>
+                                                <Text layoutX="55.0" layoutY="291.0" lineSpacing="1.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="defaultTxt" text="Middle Name">
+                                                   <font>
+                                                      <Font name="HandoTrial-Regular" size="11.0" />
+                                                   </font>
+                                                </Text>
+                                                <Text layoutX="57.0" layoutY="379.0" lineSpacing="1.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="defaultTxt" text="Birthday">
+                                                   <font>
+                                                      <Font name="HandoTrial-Regular" size="11.0" />
+                                                   </font>
+                                                </Text>
+                                                <Text layoutX="218.0" layoutY="380.0" lineSpacing="1.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="defaultTxt" text="Age">
+                                                   <font>
+                                                      <Font name="HandoTrial-Regular" size="11.0" />
+                                                   </font>
+                                                </Text>
+                                                <ComboBox fx:id="AgeCB" layoutX="213.0" layoutY="388.0" prefHeight="27.0" prefWidth="91.0" styleClass="cbBox" stylesheets="@../../styles/registerscene.css" />
+                                                <Text layoutX="55.0" layoutY="456.0" lineSpacing="1.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="defaultTxt" text="Marital Status">
+                                                   <font>
+                                                      <Font name="HandoTrial-Regular" size="11.0" />
+                                                   </font>
+                                                </Text>
+                                                <ComboBox fx:id="MaritalCB" layoutX="57.0" layoutY="466.0" prefHeight="27.0" prefWidth="248.0" styleClass="cbBox" stylesheets="@../../styles/registerscene.css" />
+                                                <TextField id="textNorm" fx:id="Barangay" layoutX="57.0" layoutY="541.0" prefHeight="40.0" prefWidth="249.0" styleClass="defaultTxtField" stylesheets="@../../styles/registerscene.css">
+                                                   <effect>
+                                                      <ColorAdjust />
+                                                   </effect>
+                                                </TextField>
+                                                <Text layoutX="57.0" layoutY="531.0" lineSpacing="1.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="defaultTxt" text="Barangay">
+                                                   <font>
+                                                      <Font name="HandoTrial-Regular" size="11.0" />
+                                                   </font>
+                                                </Text>
+                                                <ImageView fitHeight="226.0" fitWidth="289.0" layoutX="40.0" layoutY="688.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@../../images.png/Registration.shape2.png" />
+                                                   </image>
+                                                </ImageView>
+                                                <TextField id="textNorm" fx:id="EmailRegisterField" layoutX="57.0" layoutY="712.0" prefHeight="40.0" prefWidth="249.0" styleClass="txtNorm" stylesheets="@../../styles/GeneralStylesheet.css">
+                                                   <effect>
+                                                      <ColorAdjust />
+                                                   </effect>
+                                                </TextField>
+                                                <Text layoutX="55.0" layoutY="707.0" lineSpacing="1.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="defaultTxt" text="Email Address">
+                                                   <font>
+                                                      <Font name="HandoTrial-Regular" size="11.0" />
+                                                   </font>
+                                                </Text>
+                                                <TextField id="textNorm" fx:id="PasswordRegisField" layoutX="57.0" layoutY="780.0" prefHeight="40.0" prefWidth="249.0" styleClass="defaultTxtField" stylesheets="@../../styles/registerscene.css">
+                                                   <effect>
+                                                      <ColorAdjust />
+                                                   </effect>
+                                                </TextField>
+                                                <Text layoutX="55.0" layoutY="772.0" lineSpacing="1.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="defaultTxt" text="Password">
+                                                   <font>
+                                                      <Font name="HandoTrial-Regular" size="11.0" />
+                                                   </font>
+                                                </Text>
+                                                <Text fill="#aea8a8" layoutX="123.0" layoutY="830.0" lineSpacing="1.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="statementFormat" text="(Password must contain at least 1 capital letter,  number, and symbol) " wrappingWidth="284.7830390930176">
+                                                   <font>
+                                                      <Font name="HandoTrial-Regular" size="7.0" />
+                                                   </font>
+                                                </Text>
+                                                <TextField id="textNorm" fx:id="ConfirmPasswordField" layoutX="57.0" layoutY="856.0" prefHeight="40.0" prefWidth="249.0" styleClass="defaultTxtField" stylesheets="@../../styles/registerscene.css">
+                                                   <effect>
+                                                      <ColorAdjust />
+                                                   </effect>
+                                                </TextField>
+                                                <Text layoutX="55.0" layoutY="847.0" lineSpacing="1.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="defaultTxt" text="Confirm Password">
+                                                   <font>
+                                                      <Font name="HandoTrial-Regular" size="11.0" />
+                                                   </font>
+                                                </Text>
+                                                <Button fx:id="CreateAccBtn" layoutX="40.0" layoutY="934.0" mnemonicParsing="false" onMouseClicked="#CreateAccount" prefHeight="40.0" prefWidth="290.0" stylesheets="@../../styles/GeneralStylesheet.css" text="Create Account" textFill="WHITE">
+                                                   <styleClass>
+                                                      <String fx:value="buttons" />
+                                                      <String fx:value="btnRegister" />
+                                                   </styleClass>
+                                                </Button>
+                                                <Label fx:id="errMess2" layoutX="59.0" layoutY="897.0" prefHeight="15.0" prefWidth="170.0" styleClass="errMess" stylesheets="@../../styles/GeneralStylesheet.css">
+                                                   <font>
+                                                      <Font size="10.0" />
+                                                   </font>
+                                                </Label>
+                                                <DatePicker fx:id="DatePicker" layoutX="58.0" layoutY="387.0" prefHeight="23.0" prefWidth="127.0" styleClass="datePicker" stylesheets="@../../styles/registerscene.css" />
+                                             </children>
+                                          </Pane>
+                                       </children>
+                                    </AnchorPane>
+                                </content>
+                              </ScrollPane>
+                           </children>
+                        </Pane>
+                        <Pane fx:id="RegisterPane1" prefHeight="640.0" prefWidth="360.0" style="-fx-background-color: #FFFFFF;" stylesheets="@../../styles/registerscene.css">
+                           <children>
+                              <ImageView fx:id="backBtn2" fitHeight="38.0" fitWidth="38.0" layoutX="23.0" layoutY="44.0" onMouseClicked="#ToLoginPane" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../images.png/backbutton.png" />
+                                 </image>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </ImageView>
+                              <ImageView fitHeight="189.0" fitWidth="200.0" layoutX="58.0" layoutY="136.0" pickOnBounds="true" preserveRatio="true" />
+                              <Text layoutX="75.0" layoutY="75.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="txtTitle" text="Registration" />
+                              <ImageView fitHeight="327.0" fitWidth="325.0" layoutX="17.0" layoutY="106.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../images.png/Register.shape.png" />
+                                 </image>
+                              </ImageView>
+                              <Text fill="#004aad" layoutX="82.0" layoutY="161.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="Data" text="DATA PROTECTION POLICY" wrappingWidth="195.3333282470703" />
+                              <Text layoutX="75.0" layoutY="184.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="paragraph" text="      RA 10173, otherwise known as the Data Privacy Act, seeks to protect the citizens’ right to their personal, sensitive information. By proceeding to answering this form, you agree to submit your own data, which the data manager pledges to not publish or disclose any information without due consent or permission of its owner.    " textAlignment="JUSTIFY" wrappingWidth="209.4700584411621" />
+                              <Text layoutX="74.0" layoutY="321.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="paragraph" text=" I hereby agree to submitting personal information and attest that the information to be provided in this form is complete, true, and correct. " textAlignment="JUSTIFY" wrappingWidth="210.80338668823242" />
+                              <Button fx:id="disagreeBtn" layoutX="43.0" layoutY="450.0" mnemonicParsing="false" onMouseClicked="#ToLoginPane" prefHeight="35.0" prefWidth="130.0" styleClass="buttons1" stylesheets="@../../styles/registerscene.css" text="I DISAGREE" />
+                              <Button fx:id="AgreeBtn" layoutX="185.0" layoutY="450.0" mnemonicParsing="false" onMouseClicked="#ToRegisterAcc" prefHeight="35.0" prefWidth="130.0" styleClass="buttons2" stylesheets="@../../styles/registerscene.css" text="I AGREE" />
+                           </children>
+                        </Pane>
+                        <Pane id="mainPane" fx:id="LoginPane" prefHeight="640.0" prefWidth="360.0" style="-fx-background-color: #FFFFFF;" stylesheets="@../../styles/GeneralStylesheet.css">
+                           <children>
+                              <Text id="txtTitle" boundsType="VISUAL" fill="#004aad" layoutX="55.0" layoutY="278.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="txtTitle" text="Comm">
+                                 <font>
+                                    <Font size="36.0" />
+                                 </font>
+                              </Text>
+                              <Text id="txtTitle" boundsType="VISUAL" fill="#e84949" layoutX="165.0" layoutY="278.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="txtTitle" text="uni">
+                                 <font>
+                                    <Font size="36.0" />
+                                 </font>
+                              </Text>
+                              <Text boundsType="VISUAL" fill="#e69d1e" layoutX="218.0" layoutY="278.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="txtTitle" text="TASK" wrappingWidth="89.947265625">
+                                 <font>
+                                    <Font size="36.0" />
+                                 </font>
+                              </Text>
+                              <ImageView fitHeight="196.0" fitWidth="367.0" layoutX="-5.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../images.png/ae716248acb75e7fa5b56703ff626d3f.png" />
+                                 </image>
+                              </ImageView>
+                              <TextField id="textNorm" fx:id="emailLogInField" layoutX="52.0" layoutY="339.0" prefHeight="40.0" prefWidth="270.0" promptText="   Email" styleClass="txtNorm" stylesheets="@../../styles/GeneralStylesheet.css">
+                                 <effect>
+                                    <ColorAdjust />
+                                 </effect>
+                              </TextField>
+                              <TextField id="textNorm" fx:id="passwordLoginField" layoutX="52.0" layoutY="392.0" prefHeight="40.0" prefWidth="270.0" promptText="   Password" styleClass="txtNorm" stylesheets="@../../styles/GeneralStylesheet.css">
+                                 <effect>
+                                    <ColorAdjust />
+                                 </effect>
+                              </TextField>
+                              <Button fx:id="btnLogin" layoutX="52.0" layoutY="494.0" mnemonicParsing="false" onAction="#buttonHandler" prefHeight="40.0" prefWidth="270.0" styleClass="buttons" stylesheets="@../../styles/GeneralStylesheet.css" text="LOGIN" />
+                              <Button fx:id="RegisterBtn" layoutX="52.0" layoutY="548.0" mnemonicParsing="false" onMouseClicked="#ToRegisterPane1" prefHeight="40.0" prefWidth="270.0" stylesheets="@../../styles/GeneralStylesheet.css" text="REGISTER" textFill="WHITE">
+                                 <styleClass>
+                                    <String fx:value="buttons" />
+                                    <String fx:value="btnRegister" />
+                                 </styleClass>
+                              </Button>
+                              <Text layoutX="88.0" layoutY="307.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="quoteTxt" text="Together We Ask, Together We Act!" />
+                              <Label fx:id="errMess1" layoutX="60.0" layoutY="440.0" styleClass="errMess" stylesheets="@../../styles/GeneralStylesheet.css">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </Pane>
+                     </children>
+                  </StackPane>
+               </children>
+            </Pane>
+         </top>
+      </BorderPane>
+   </children>
+</AnchorPane>

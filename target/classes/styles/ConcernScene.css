@@ -1,0 +1,117 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : Jan 28, 2025, 8:48:19 PM
+    Author     : ADMIN
+*/
+.txtTitle{
+    -fx-font-weight: bold;
+    -fx-font-family: 'Poppins';
+}
+
+.subheading {
+    -fx-font-size: 12.97px;
+    -fx-text-fill: #868686; 
+    -fx-font-family: 'Poppins';
+    -fx-font-weight: 700;
+}
+
+.pendingBtn, .reportBtn {
+    -fx-background-radius: 16.25;
+    -fx-background-color: #E69D1E;
+    -fx-font-family: 'Poppins';
+    -fx-font-weight: bold;
+    -fx-font-size: 13px;
+    -fx-cursor: hand;
+}
+
+.myShape {
+    -fx-fill: #F0F0F0;
+}
+
+.recHeading{
+    -fx-text-fill:#363636;
+    -fx-font-family: 'Poppins';
+    -fx-font-weight: 700;
+    -fx-font-size: 17px;
+}
+
+.recsubHeading{
+    -fx-text-fill:#363636;
+    -fx-font-family: 'Product Sans';
+    -fx-font-weight: 400;
+    -fx-font-size: 13px;
+}
+.recLoc{
+    -fx-text-fill:#818181;
+    -fx-font-family: 'Product Sans';
+    -fx-font-weight: 400;
+    -fx-font-size: 11px;
+}
+
+.recHeading {
+    -fx-text-fill: red;
+}
+
+.buttons, .fields{
+    -fx-font-family: 'Poppins';
+    -fx-text-fill: #000000;
+    -fx-font-weight: bold;
+    -fx-background-radius: 20; 
+    -fx-border-radius: 20;     
+    -fx-border-width: 1;       
+    -fx-background-color: #93B4D5; 
+    -fx-padding: 5;   
+}
+
+.reshareBtn {
+    -fx-font-family: 'Poppins';
+    -fx-text-fill: #151515;
+    -fx-font-weight: bold;
+    -fx-background-radius: 10; 
+    -fx-border-radius: 12;     
+    -fx-border-width: 1;  
+    -fx-border-color: #151515;   
+    -fx-background-color: white; 
+    -fx-padding: 5; 
+    -fx-cursos: hand;
+}
+
+.reshareBtn:hover {
+    -fx-background-radius: 10;
+    -fx-border-radius: 12;     
+    -fx-border-width: 1; 
+    -fx-border-color: none;
+    -fx-background-color: #E69D1E; 
+    -fx-padding: 5;
+    -fx-cursos: hand;
+}
+
+.resolveBtn {
+    -fx-font-family: 'Poppins';
+    -fx-text-fill: #151515;
+    -fx-font-weight: bold;
+    -fx-background-radius: 10; 
+    -fx-border-radius: 12;     
+    -fx-border-width: 1;       
+    -fx-background-color: #E69D1E; 
+    -fx-padding: 5; 
+    -fx-cursos: hand;
+}
+
+.scroll-pane, .scroll-bar, .corner {
+    -fx-background-color: transparent;
+    -fx-padding: 0;
+}
+
+.scroll-pane .scroll-bar:vertical, .scroll-pane .scroll-bar:horizontal {
+    -fx-opacity: 0; 
+    -fx-background-color: transparent; 
+    -fx-padding:0;
+}
+.scroll-bar .corner{
+    -fx-padding:0;
+}
+

@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="640.0" prefWidth="360.0" stylesheets="@../../styles/GeneralStylesheet.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.communitask2.PendingSceneController">
+   <children>
+      <Pane layoutX="10.0" layoutY="10.0" prefHeight="650.0" prefWidth="370.0" style="-fx-background-color: #FFFFFF;" styleClass="txtDefault" stylesheets="@../../styles/complaintsubmission.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label layoutX="50.0" layoutY="72.0" styleClass="txtTitle" stylesheets="@../../styles/complaintsubmission.css" text="PENDING COMPLAINS" textAlignment="CENTER" textFill="#f2f2f2" />
+            <Text boundsType="VISUAL" fill="#004aad" layoutX="135.0" layoutY="59.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Comm">
+               <font>
+                  <Font size="31.0" />
+               </font>
+               <styleClass>
+                  <String fx:value="txtTitle" />
+                  <String fx:value="communiTaskTxt" />
+               </styleClass>
+            </Text>
+            <Text boundsType="VISUAL" fill="#e84949" layoutX="178.0" layoutY="59.0" strokeType="OUTSIDE" strokeWidth="0.0" text="uni">
+               <font>
+                  <Font size="31.0" />
+               </font>
+               <styleClass>
+                  <String fx:value="txtTitle" />
+                  <String fx:value="communiTaskTxt" />
+               </styleClass>
+            </Text>
+            <Text boundsType="VISUAL" fill="#e69d1e" layoutX="199.0" layoutY="59.0" strokeType="OUTSIDE" strokeWidth="0.0" text="TASK" wrappingWidth="89.947265625">
+               <font>
+                  <Font size="31.0" />
+               </font>
+               <styleClass>
+                  <String fx:value="txtTitle" />
+                  <String fx:value="communiTaskTxt" />
+               </styleClass>
+            </Text>
+            <ImageView fx:id="backBtn" fitHeight="33.0" fitWidth="42.0" layoutX="31.0" layoutY="32.0" onMouseClicked="#backToMainScene" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../images.png/backbutton.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="OPEN_HAND" />
+               </cursor>
+            </ImageView>
+            <Pane layoutX="25.0" layoutY="137.0" prefHeight="134.0" prefWidth="311.0" styleClass="rectanglePhotos" stylesheets="@../../styles/ConcernScene.css">
+               <children>
+                  <Rectangle id="myShape" arcHeight="24.0" arcWidth="26.0" fill="#f0f0f0" height="135.0" layoutY="3.0" stroke="#861919" strokeDashOffset="12.0" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeMiterLimit="14.0" strokeType="INSIDE" strokeWidth="0.0" styleClass="myShape" width="313.0">
+                     <cursor>
+                        <Cursor fx:constant="DEFAULT" />
+                     </cursor>
+                  </Rectangle>
+                  <Text fill="#363636" layoutX="129.0" layoutY="37.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="recHeading" text="Reporting a Flood" wrappingWidth="155.3033905029297">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Text>
+                  <ImageView fitHeight="134.0" fitWidth="118.0" layoutX="-1.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../images.png/ConcernScene.image3.png" />
+                     </image>
+                  </ImageView>
+                  <Text layoutX="129.0" layoutY="53.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="recsubHeading" text="by Rose Dawson" wrappingWidth="126.47006225585938">
+                     <font>
+                        <Font name="Adine Kirnberg Alternate" size="14.0" />
+                     </font>
+                  </Text>
+                  <Text fill="#363636" layoutX="144.0" layoutY="72.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="recLoc" text="123 Main Street, Village 5" wrappingWidth="126.47006225585938">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Text>
+                  <ImageView fitHeight="14.0" fitWidth="11.0" layoutX="129.0" layoutY="62.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../images.png/octicon_location-16.png" />
+                     </image>
+                  </ImageView>
+                  <Button layoutX="212.0" layoutY="84.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="83.0" styleClass="resolveStatus" stylesheets="@loginform.css" text="Resolved">
+                     <font>
+                        <Font name="HandoTrial-Regular" size="11.0" />
+                     </font>
+                  </Button>
+                  <Text layoutX="147.0" layoutY="107.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="defaultTxtBold" text="Status:" />
+               </children>
+            </Pane>
+            <Pane layoutX="7.0" layoutY="255.0" prefHeight="65.0" prefWidth="360.0" stylesheets="@../../styles/ConcernScene.css">
+               <children>
+                  <Pane layoutX="18.0" layoutY="37.0" prefHeight="134.0" prefWidth="311.0" styleClass="rectanglePhotos" stylesheets="@loginform.css">
+                     <children>
+                        <Rectangle id="myShape" arcHeight="24.0" arcWidth="26.0" fill="#f0f0f0" height="135.0" layoutY="3.0" stroke="#861919" strokeDashOffset="12.0" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeMiterLimit="14.0" strokeType="INSIDE" strokeWidth="0.0" styleClass="myShape" width="313.0">
+                           <cursor>
+                              <Cursor fx:constant="DEFAULT" />
+                           </cursor>
+                        </Rectangle>
+                        <Text fill="#363636" layoutX="129.0" layoutY="37.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="recHeading" text="Blocked Sewages" wrappingWidth="155.3033905029297">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Text>
+                        <ImageView fitHeight="134.0" fitWidth="118.0" layoutX="-1.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../images.png/ConcernScene.image1.png" />
+                           </image>
+                        </ImageView>
+                        <Text layoutX="129.0" layoutY="53.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="recsubHeading" text="by Rose Dawson" wrappingWidth="126.47006225585938">
+                           <font>
+                              <Font name="Adine Kirnberg Alternate" size="14.0" />
+                           </font>
+                        </Text>
+                        <Text fill="#363636" layoutX="144.0" layoutY="72.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="recLoc" text="123 Main Street, Village 5" wrappingWidth="126.47006225585938">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Text>
+                        <ImageView fitHeight="14.0" fitWidth="11.0" layoutX="129.0" layoutY="62.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../images.png/octicon_location-16.png" />
+                           </image>
+                        </ImageView>
+                        <Button layoutX="214.0" layoutY="83.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="83.0" styleClass="ongoingStatus" stylesheets="@loginform.css" text="Resolved">
+                           <font>
+                              <Font name="HandoTrial-Regular" size="11.0" />
+                           </font>
+                        </Button>
+                        <Text layoutX="144.0" layoutY="108.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="defaultTxtBold" text="Status:" />
+                     </children>
+                  </Pane>
+                  <Pane layoutX="18.0" layoutY="196.0" prefHeight="134.0" prefWidth="311.0" styleClass="rectanglePhotos" stylesheets="@loginform.css">
+                     <children>
+                        <Rectangle id="myShape" arcHeight="24.0" arcWidth="26.0" fill="#f0f0f0" height="135.0" layoutY="3.0" stroke="#861919" strokeDashOffset="12.0" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeMiterLimit="14.0" strokeType="INSIDE" strokeWidth="0.0" styleClass="myShape" width="313.0">
+                           <cursor>
+                              <Cursor fx:constant="DEFAULT" />
+                           </cursor>
+                        </Rectangle>
+                        <Text fill="#363636" layoutX="129.0" layoutY="37.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="recHeading" text="Reporting a Flood" wrappingWidth="155.3033905029297">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Text>
+                        <ImageView fitHeight="134.0" fitWidth="118.0" layoutX="-1.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../images.png/ConcernScene.image3.png" />
+                           </image>
+                        </ImageView>
+                        <Text layoutX="129.0" layoutY="53.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="recsubHeading" text="by Rose Dawson" wrappingWidth="126.47006225585938">
+                           <font>
+                              <Font name="Adine Kirnberg Alternate" size="14.0" />
+                           </font>
+                        </Text>
+                        <Text fill="#363636" layoutX="144.0" layoutY="72.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="recLoc" text="123 Main Street, Village 5" wrappingWidth="126.47006225585938">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Text>
+                        <ImageView fitHeight="14.0" fitWidth="11.0" layoutX="129.0" layoutY="62.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../images.png/octicon_location-16.png" />
+                           </image>
+                        </ImageView>
+                        <Button layoutX="214.0" layoutY="85.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="83.0" styleClass="pendingStatus" stylesheets="@../../styles/GeneralStylesheet.css" text="Resolved" />
+                        <Text layoutX="144.0" layoutY="110.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="defaultTxtBold" text="Status:" />
+                     </children>
+                  </Pane>
+               </children>
+            </Pane>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

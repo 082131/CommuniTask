@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import java.net.URL?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" maxHeight="640.0" maxWidth="360.0" minHeight="640.0" minWidth="360.0" prefHeight="640.0" prefWidth="360.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.communitask2.AccountSceneController">
+   <children>
+      <BorderPane layoutX="38.0" layoutY="183.0" prefHeight="640.0" prefWidth="360.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <top>
+            <Pane prefHeight="640.0" prefWidth="360.0" style="-fx-background-color: #FFFFFF;" BorderPane.alignment="CENTER">
+               <children>
+                  <StackPane layoutY="220.0" prefHeight="374.0" prefWidth="360.0" style="-fx-background-color: #FFFFFF;">
+                     <children>
+                        <Pane fx:id="SecurityPane" maxHeight="370.0" minHeight="370.0" prefHeight="370.0" prefWidth="360.0" style="-fx-background-color: #FFFFFF;" styleClass="defaultTxt" stylesheets="@../../styles/Notification.css">
+                           <children>
+                              <Button alignment="CENTER_RIGHT" layoutX="166.0" layoutY="14.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="130.0" text="Security">
+                                 <font>
+                                    <Font name="HandoTrial-Bold" size="21.0" />
+                                 </font>
+                                 <stylesheets>
+                                    <URL value="@../../styles/Notification.css" />
+                                    <URL value="@../../styles/AccountScene.css" />
+                                 </stylesheets>
+                                 <styleClass>
+                                    <String fx:value="btnTwn1" />
+                                    <String fx:value="btnTwn2" />
+                                 </styleClass>
+                              </Button>
+                              <Button fx:id="PersonalButton" layoutX="66.0" layoutY="14.0" mnemonicParsing="false" onMouseClicked="#toPersonalPane" prefHeight="41.0" prefWidth="136.0" styleClass="btnTwn1" stylesheets="@../../styles/AccountScene.css" text="Personal Info">
+                                 <font>
+                                    <Font name="HandoTrial-Bold" size="16.0" />
+                                 </font>
+                              </Button>
+                              <Text layoutX="62.0" layoutY="105.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="defaultTxt" text="Email">
+                                 <font>
+                                    <Font name="HandoTrial-Regular" size="11.0" />
+                                 </font>
+                              </Text>
+                              <TextField fx:id="EmailField" layoutX="58.0" layoutY="109.0" onMouseClicked="#recordInfo" prefHeight="30.0" prefWidth="245.0" promptText="  Enter the title of the complaint" styleClass="defaultTxtField" stylesheets="@../../styles/AccountScene.css" text="username@email.com">
+                                 <font>
+                                    <Font name="HandoTrial-Regular" size="11.0" />
+                                 </font>
+                              </TextField>
+                              <Button fx:id="EditAccBtn11" layoutX="58.0" layoutY="155.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="245.0" stylesheets="@../../styles/AccountScene.css" text="Verify Email">
+                                 <styleClass>
+                                    <String fx:value="mainPain" />
+                                    <String fx:value="defaultBtn" />
+                                 </styleClass>
+                                 <font>
+                                    <Font name="HandoTrial-Bold" size="15.0" />
+                                 </font>
+                              </Button>
+                              <Text layoutX="61.0" layoutY="210.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="defaultTxt" text="Password:">
+                                 <font>
+                                    <Font name="HandoTrial-Regular" size="11.0" />
+                                 </font>
+                              </Text>
+                              <Button fx:id="EditAccBtn111" layoutX="58.0" layoutY="261.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="245.0" stylesheets="@../../styles/AccountScene.css" text="Change Password">
+                                 <styleClass>
+                                    <String fx:value="mainPain" />
+                                    <String fx:value="defaultBtn" />
+                                 </styleClass>
+                                 <font>
+                                    <Font name="HandoTrial-Bold" size="15.0" />
+                                 </font>
+                              </Button>
+                              <PasswordField layoutX="58.0" layoutY="220.0" prefHeight="30.0" prefWidth="245.0" promptText="......." stylesheets="@../../styles/AccountScene.css">
+                                 <styleClass>
+                                    <String fx:value="defaultTxt" />
+                                    <String fx:value="defaultTxtField" />
+                                 </styleClass>
+                              </PasswordField>
+                           </children>
+                        </Pane>
+                        <Pane fx:id="PersonalPane" maxHeight="370.0" minHeight="370.0" prefHeight="370.0" prefWidth="360.0" style="-fx-background-color: #FFFFFF;" styleClass="defaultTxt" stylesheets="@../../styles/AccountScene.css">
+                           <children>
+                              <Text layoutX="62.0" layoutY="87.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="defaultTxt" text="First Name:">
+                                 <font>
+                                    <Font name="Helvetica LT 93 Black Extended" size="11.0" />
+                                 </font>
+                              </Text>
+                              <TextField fx:id="FirstNameField" layoutX="61.0" layoutY="96.0" onMouseClicked="#recordInfo" prefHeight="30.0" prefWidth="237.0" promptText="  Enter the title of the complaint" styleClass="defaultTxtField" stylesheets="@../../styles/AccountScene.css" text="First Name">
+                                 <font>
+                                    <Font name="HandoTrial-Regular" size="11.0" />
+                                 </font>
+                              </TextField>
+                              <Text layoutX="62.0" layoutY="145.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="defaultTxt" text="Birthday:">
+                                 <font>
+                                    <Font name="HandoTrial-Regular" size="11.0" />
+                                 </font>
+                              </Text>
+                              <TextField fx:id="BdayField" layoutX="59.0" layoutY="154.0" onMouseClicked="#recordInfo" prefHeight="30.0" prefWidth="116.0" promptText="  Enter the title of the complaint" styleClass="defaultTxtField" stylesheets="@../../styles/AccountScene.css" text="MM/YY/DD">
+                                 <font>
+                                    <Font name="HandoTrial-Regular" size="11.0" />
+                                 </font>
+                              </TextField>
+                              <Text layoutX="201.0" layoutY="173.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="defaultTxt" text="Age:">
+                                 <font>
+                                    <Font name="HandoTrial-Regular" size="11.0" />
+                                 </font>
+                              </Text>
+                              <TextField fx:id="AgeField" layoutX="193.0" layoutY="154.0" onMouseClicked="#recordInfo" prefHeight="30.0" prefWidth="105.0" styleClass="defaultTxtField" stylesheets="@../../styles/AccountScene.css">
+                                 <font>
+                                    <Font name="HandoTrial-Regular" size="11.0" />
+                                 </font>
+                              </TextField>
+                              <Text layoutX="62.0" layoutY="202.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Contact Number">
+                                 <font>
+                                    <Font name="HandoTrial-Regular" size="11.0" />
+                                 </font>
+                              </Text>
+                              <TextField fx:id="NumField" layoutX="61.0" layoutY="211.0" onMouseClicked="#recordInfo" prefHeight="30.0" prefWidth="237.0" promptText="  Enter the title of the complaint" styleClass="defaultTxtField" stylesheets="@../../styles/AccountScene.css" text="+63">
+                                 <font>
+                                    <Font name="HandoTrial-Regular" size="11.0" />
+                                 </font>
+                              </TextField>
+                              <Text layoutX="62.0" layoutY="260.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="defaultTxt" text="Permanent Address">
+                                 <font>
+                                    <Font name="HandoTrial-Regular" size="11.0" />
+                                 </font>
+                              </Text>
+                              <TextField fx:id="AddressField" layoutX="62.0" layoutY="267.0" onMouseClicked="#recordInfo" prefHeight="30.0" prefWidth="238.0" promptText="  Enter the title of the complaint" styleClass="defaultTxtField" stylesheets="@../../styles/AccountScene.css" text="Address">
+                                 <font>
+                                    <Font name="HandoTrial-Regular" size="11.0" />
+                                 </font>
+                              </TextField>
+                              <Button fx:id="EditAccBtn" layoutX="61.0" layoutY="308.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="240.0" stylesheets="@../../styles/Notification.css" text="Edit Account">
+                                 <styleClass>
+                                    <String fx:value="mainPain" />
+                                    <String fx:value="defaultBtn" />
+                                 </styleClass>
+                                 <font>
+                                    <Font name="HandoTrial-Bold" size="15.0" />
+                                 </font>
+                              </Button>
+                              <Button fx:id="SecuirtyPaneBtn" alignment="CENTER_RIGHT" layoutX="167.0" layoutY="14.0" mnemonicParsing="false" onMouseClicked="#toSecurityPane" prefHeight="41.0" prefWidth="130.0" styleClass="btnTwn1" text="Security">
+                                 <font>
+                                    <Font name="HandoTrial-Bold" size="21.0" />
+                                 </font>
+                                 <stylesheets>
+                                    <URL value="@../../styles/Notification.css" />
+                                    <URL value="@../../styles/AccountScene.css" />
+                                 </stylesheets>
+                                 <cursor>
+                                    <Cursor fx:constant="OPEN_HAND" />
+                                 </cursor>
+                              </Button>
+                              <Button layoutX="66.0" layoutY="14.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="136.0" styleClass="btnTwn2" stylesheets="@../../styles/AccountScene.css" text="Personal Info">
+                                 <font>
+                                    <Font name="HandoTrial-Bold" size="16.0" />
+                                 </font>
+                                 <cursor>
+                                    <Cursor fx:constant="OPEN_HAND" />
+                                 </cursor>
+                              </Button>
+                           </children>
+                        </Pane>
+                     </children>
+                  </StackPane>
+                  <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="105.0" layoutY="52.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../images.png/circleicon.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="goBackBtn" fitHeight="51.0" fitWidth="51.0" layoutX="32.0" layoutY="40.0" onMouseClicked="#goBackBtn" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../images.png/backbutton.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="OPEN_HAND" />
+                     </cursor>
+                  </ImageView>
+                  <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="282.0" layoutY="39.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../images.png/Component%2037.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+               </children>
+            </Pane>
+         </top>
+      </BorderPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,285 @@
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="HomeScene" maxHeight="918.0" maxWidth="360.0" prefHeight="640.0" prefWidth="360.0" style="-fx-background-color: #FFFFFF;" styleClass="mainFxmlClass" stylesheets="@../../styles/GeneralStylesheet.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.communitask2.HomeSceneController">
+   <children>
+      <BorderPane prefHeight="640.0" prefWidth="340.0" stylesheets="@../../styles/GeneralStylesheet.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <center>
+            <ScrollPane hbarPolicy="NEVER" prefHeight="640.0" prefWidth="360.0" styleClass="scrollPane" stylesheets="@../../styles/GeneralStylesheet.css" vbarPolicy="ALWAYS" BorderPane.alignment="CENTER">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="857.0" prefWidth="360.0" styleClass="scrollPane" stylesheets="@../../styles/GeneralStylesheet.css">
+                     <children>
+                        <BorderPane prefHeight="858.0" prefWidth="360.0" stylesheets="@../../styles/GeneralStylesheet.css">
+                           <center>
+                              <Pane prefHeight="850.0" prefWidth="360.0" style="-fx-background-color: #FFFFFF;" styleClass="scrollPane" stylesheets="@../../styles/GeneralStylesheet.css" BorderPane.alignment="CENTER">
+                                 <children>
+                                    <Text depthTest="DISABLE" layoutX="27.0" layoutY="75.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mabuhay!" wrappingWidth="181.13671875">
+                                       <font>
+                                          <Font name="HandoTrial-Regular" size="36.0" />
+                                       </font>
+                                       <cursor>
+                                          <Cursor fx:constant="DEFAULT" />
+                                       </cursor>
+                                       <styleClass>
+                                          <String fx:value="txtTitle" />
+                                          <String fx:value="mainPane" />
+                                       </styleClass>
+                                    </Text>
+                                    <ImageView fitHeight="78.0" fitWidth="71.0" layoutX="250.0" layoutY="28.0" pickOnBounds="true" preserveRatio="true" styleClass="iconBorder">
+                                       <image>
+                                          <Image url="@../../images.png/circleicon.png" />
+                                       </image>
+                                    </ImageView>
+                                    <HBox layoutX="21.0" layoutY="136.0" prefHeight="92.0" prefWidth="326.0" stylesheets="@../../styles/GeneralStylesheet.css">
+                                       <children>
+                                          <ImageView fitHeight=" 95.0" fitWidth="55.0" pickOnBounds="true" preserveRatio="true" styleClass="iconBtn" HBox.hgrow="NEVER">
+                                             <HBox.margin>
+                                                <Insets right="31.0" />
+                                             </HBox.margin>
+                                             <image>
+                                                <Image url="@../../images.png/Component%2025.png" />
+                                             </image>
+                                          </ImageView>
+                                          <ImageView fitHeight=" 95.0" fitWidth="55.0" pickOnBounds="true" preserveRatio="true" styleClass="iconBtn" HBox.hgrow="NEVER">
+                                             <HBox.margin>
+                                                <Insets right="31.0" />
+                                             </HBox.margin>
+                                             <image>
+                                                <Image url="@../../images.png/HomeScene.publicsafety.PNG.png" />
+                                             </image>
+                                          </ImageView>
+                                          <ImageView fitHeight=" 95.0" fitWidth="55.0" pickOnBounds="true" preserveRatio="true" styleClass="iconBtn" HBox.hgrow="NEVER">
+                                             <HBox.margin>
+                                                <Insets right="31.0" />
+                                             </HBox.margin>
+                                             <image>
+                                                <Image url="@../../images.png/Component%2033%20(1).png" />
+                                             </image>
+                                          </ImageView>
+                                          <ImageView fx:id="raiseConcern" fitHeight="95.0" fitWidth="55.0" onMouseClicked="#concernBtn" pickOnBounds="true" preserveRatio="true" styleClass="iconBtn" HBox.hgrow="NEVER">
+                                             <HBox.margin>
+                                                <Insets right="31.0" />
+                                             </HBox.margin>
+                                             <image>
+                                                <Image url="@../../images.png/Component%2034.png" />
+                                             </image>
+                                             <cursor>
+                                                <Cursor fx:constant="HAND" />
+                                             </cursor>
+                                          </ImageView>
+                                       </children>
+                                    </HBox>
+                                    <Pane layoutY="239.0" prefHeight="176.0" prefWidth="360.0" stylesheets="@../../styles/GeneralStylesheet.css">
+                                       <children>
+                                          <ScrollPane hbarPolicy="NEVER" layoutY="-11.0" pannable="true" prefHeight="188.0" prefWidth="360.0" styleClass="scrollPane" stylesheets="@../../styles/GeneralStylesheet.css" vbarPolicy="ALWAYS" vvalue="0.45">
+                                            <content>
+                                                <FlowPane prefHeight="180.0" prefWidth="717.0">
+                                                   <children>
+                                                    <AnchorPane minHeight="0.0" minWidth="0.0" pickOnBounds="false" prefHeight="180.0" prefWidth="769.0">
+                                                         <children>
+                                                            <Pane layoutY="-5.0" prefHeight="185.0" prefWidth="774.0">
+                                                               <children>
+                                                                  <HBox alignment="CENTER" layoutX="-21.0" layoutY="9.0" prefHeight="180.0" prefWidth="698.0" styleClass="hbox">
+                                                                     <children>
+                                                                        <ImageView fitHeight="165.0" fitWidth="280.0" pickOnBounds="true" preserveRatio="true" styleClass="homeIMG">
+                                                                           <image>
+                                                                              <Image url="@../../images.png/HomeScene.imagehover1.png" />
+                                                                           </image>
+                                                                           <HBox.margin>
+                                                                              <Insets left="3.0" right="8.0" />
+                                                                           </HBox.margin>
+                                                                        </ImageView>
+                                                                        <ImageView fitHeight="165.0" fitWidth="280.0" pickOnBounds="true" preserveRatio="true" styleClass="homeIMG">
+                                                                           <image>
+                                                                              <Image url="@../../images.png/HomeScene.imaghover2.png" />
+                                                                           </image>
+                                                                           <HBox.margin>
+                                                                              <Insets left="3.0" right="8.0" />
+                                                                           </HBox.margin>
+                                                                        </ImageView>
+                                                                        <ImageView fitHeight="170.0" fitWidth="342.0" pickOnBounds="true" preserveRatio="true" styleClass="homeIMG">
+                                                                           <image>
+                                                                              <Image url="@../../images.png/HomeScene.imagehover3.png" />
+                                                                           </image>
+                                                                           <HBox.margin>
+                                                                              <Insets left="3.0" right="8.0" />
+                                                                           </HBox.margin>
+                                                                        </ImageView>
+                                                                     </children>
+                                                                     <padding>
+                                                                        <Insets left="10.0" right="10.0" />
+                                                                     </padding>
+                                                                  </HBox>
+                                                               </children>
+                                                            </Pane>
+                                                         </children>
+                                                      </AnchorPane>
+                                                   </children>
+                                                </FlowPane>
+                                            </content>
+                                             <cursor>
+                                                <Cursor fx:constant="HAND" />
+                                             </cursor>
+                                          </ScrollPane>
+                                       </children>
+                                    </Pane>
+                                    <Text layoutX="21.0" layoutY="436.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="defaultTxtBold" text="BULLETIN BOARD">
+                                       <font>
+                                          <Font name="HandoTrial-Black" size="15.0" />
+                                       </font></Text>
+                                    <ImageView fitHeight="129.0" fitWidth="168.0" layoutX="20.0" layoutY="453.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../images.png/HomeScene.rectangle1.png" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fitHeight="225.0" fitWidth="144.0" layoutX="200.0" layoutY="453.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../images.png/HomeScene.image1.png" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fitHeight="143.0" fitWidth="144.0" layoutX="200.0" layoutY="690.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../images.png/HomeScene.rectangle2.png" />
+                                       </image>
+                                    </ImageView>
+                                    <Text layoutX="211.0" layoutY="719.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="defaultTxtBold" text="2025 Projects of Malolos" wrappingWidth="121.515625">
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                    </Text>
+                                    <ImageView fitHeight="238.0" fitWidth="166.0" layoutX="20.0" layoutY="591.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../images.png/HomeScene.image2.png" />
+                                       </image>
+                                    </ImageView>
+                                    <Text layoutX="211.0" layoutY="759.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="defaultTxtItalic" text="Making Another History" textAlignment="CENTER" wrappingWidth="123.515625">
+                                       <font>
+                                          <Font size="11.0" />
+                                       </font>
+                                    </Text>
+                                    <Text layoutX="212.0" layoutY="783.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="mainPane" text="dolor sit amet, consectetur adipiscing elit, sed do eiusmod" wrappingWidth="123.515625">
+                                       <font>
+                                          <Font name="HandoTrial-Regular" size="10.0" />
+                                       </font>
+                                    </Text>
+                                    <Text layoutX="38.0" layoutY="483.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="defaultTxtItalicBold" text="Towards Smart City" />
+                                    <Text layoutX="56.0" layoutY="503.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="defaultTxtItalic" text="City of Malolos, Bulacan" textAlignment="CENTER" wrappingWidth="123.515625">
+                                       <font>
+                                          <Font size="11.0" />
+                                       </font>
+                                    </Text>
+                                    <Text layoutX="36.0" layoutY="528.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="mainPane" text="dolor sit amet, consectetur adipiscing elit, sed do eiusmeuds lemiucsest mod" wrappingWidth="135.515625">
+                                       <font>
+                                          <Font name="HandoTrial-Regular" size="11.0" />
+                                       </font>
+                                    </Text>
+                                    <Label fx:id="usernameLabel" layoutX="28.0" layoutY="81.0" prefHeight="17.0" prefWidth="151.0" stylesheets="@../../styles/ConcernScene.css" textFill="#aeadad">
+                                       <styleClass>
+                                          <String fx:value="defaultTxtBold" />
+                                          <String fx:value="subheading" />
+                                       </styleClass>
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </Pane>
+                           </center>
+                        </BorderPane>
+                     </children>
+                  </AnchorPane>
+              </content>
+            </ScrollPane>
+         </center>
+         <bottom>
+            <Pane prefHeight="65.0" prefWidth="360.0" BorderPane.alignment="CENTER">
+               <children>
+                  <AnchorPane layoutY="66.0" prefHeight="88.0" prefWidth="360.0">
+                     <children>
+                        <ImageView fitHeight="88.0" fitWidth="360.0" layoutY="-70.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../images.png/Rectangle%207.png" />
+                           </image>
+                        </ImageView>
+                        <HBox alignment="CENTER" layoutX="4.0" layoutY="-52.0" prefHeight="51.0" prefWidth="360.0" styleClass="hbox" stylesheets="@../../styles/GeneralStylesheet.css">
+                           <children>
+                              <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true" styleClass="iconBtn">
+                                 <image>
+                                    <Image url="@../../images.png/Group.png" />
+                                 </image>
+                                 <effect>
+                                    <ColorAdjust />
+                                 </effect>
+                                 <cursor>
+                                    <Cursor fx:constant="OPEN_HAND" />
+                                 </cursor>
+                                 <HBox.margin>
+                                    <Insets bottom="30.0" left="20.0" right="30.0" />
+                                 </HBox.margin>
+                              </ImageView>
+                              <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true" styleClass="iconBtn" HBox.hgrow="NEVER">
+                                 <image>
+                                    <Image url="@../../images.png/mi_notification.png" />
+                                 </image>
+                                 <effect>
+                                    <ColorAdjust />
+                                 </effect>
+                                 <cursor>
+                                    <Cursor fx:constant="OPEN_HAND" />
+                                 </cursor>
+                                 <HBox.margin>
+                                    <Insets bottom="30.0" left="20.0" right="30.0" />
+                                 </HBox.margin>
+                              </ImageView>
+                              <ImageView fx:id="ConcernBtn" fitHeight="25.0" fitWidth="25.0" onMouseClicked="#ToConcernScene" pickOnBounds="true" preserveRatio="true" styleClass="iconBtn" HBox.hgrow="NEVER">
+                                 <image>
+                                    <Image url="@../../images.png/tabler_message.png" />
+                                 </image>
+                                 <effect>
+                                    <ColorAdjust />
+                                 </effect>
+                                 <cursor>
+                                    <Cursor fx:constant="OPEN_HAND" />
+                                 </cursor>
+                                 <HBox.margin>
+                                    <Insets bottom="30.0" left="20.0" right="30.0" />
+                                 </HBox.margin>
+                              </ImageView>
+                              <ImageView fx:id="AccountScene" fitHeight="25.0" fitWidth="25.0" onMouseClicked="#ToAccountScene" pickOnBounds="true" preserveRatio="true" styleClass="iconBtn" HBox.hgrow="NEVER">
+                                 <image>
+                                    <Image url="@../../images.png/Group%20(1).png" />
+                                 </image>
+                                 <effect>
+                                    <ColorAdjust />
+                                 </effect>
+                                 <cursor>
+                                    <Cursor fx:constant="OPEN_HAND" />
+                                 </cursor>
+                                 <HBox.margin>
+                                    <Insets bottom="30.0" left="20.0" right="30.0" />
+                                 </HBox.margin>
+                              </ImageView>
+                           </children>
+                        </HBox>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </Pane>
+         </bottom>
+      </BorderPane>
+   </children>
+</AnchorPane>

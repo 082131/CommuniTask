@@ -1,0 +1,110 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.txtTitle{
+    -fx-font-family: 'Poppins';
+    -fx-font-weight: bold;
+    -fx-font-size: 37px;
+    -fx-text-fill:#1C1C1C;
+}
+
+.Data{
+    -fx-font-family: 'Poppins';
+    -fx-font-weight: bold;
+    -fx-font-size: 15px;
+    -fx-text-fill:#004AAD;
+}
+
+.paragraph{
+    -fx-font-family: 'Poppins';
+    -fx-font-size: 11px;
+    -fx-text-fill:#1C1C1C;
+}
+
+.buttons1{
+    -fx-font-family: 'Poppins';
+    -fx-text-fill: #000000;
+    -fx-font-weight: bold;
+    -fx-background-radius: 20; 
+    -fx-border-radius: 20;     
+    -fx-border-width: 1;       
+    -fx-background-color: #93B4D5; 
+    -fx-cursor:hand;
+}
+
+.buttons2{
+    -fx-font-family: 'Poppins';
+    -fx-text-fill: whitesmoke;
+    -fx-font-weight: bold;
+    -fx-background-radius: 20; 
+    -fx-border-radius: 20;     
+    -fx-border-width: 1;       
+    -fx-background-color: #004AAD; 
+    -fx-cursor:hand;
+}
+
+.buttons1:hover, .buttons2:hover{
+    -fx-background-color: #FFFFFF; 
+    -fx-border-color:#004AAD;
+    -fx-text-fill: #000000;
+}
+
+.defaultTxt{
+    -fx-font-family: 'Poppins';
+    -fx-font-weight: normal;
+    -fx-font-size: 11px;
+    -fx-text-fill:#818181;
+}
+
+.cbBox{
+    -fx-font-family: 'Poppins';
+    -fx-text-fill: #aeadad;
+    -fx-background-radius: 20; 
+    -fx-border-radius: 20;     
+    -fx-border-width: 1;    
+    -fx-border-color: black;    
+    -fx-background-color: #FFFFFF; 
+    -fx-cursor:hand;
+}
+.statementFormat{
+    -fx-font-size: 6px;
+    -fx-text-fill: #aea8a8; 
+    -fx-font-family: 'Poppins';
+    -fx-font-style: italic;
+}
+.mainPaneColor{
+    -fx-background-color: #FFFFFF;
+}
+.btnHover{
+    -fx-cursor: hand;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    -fx-background-size: cover;
+}
+.btnHover:hover{
+    -fx-background-image: url('/images.png/backbtnClicked.png');
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    -fx-background-size: contain;
+}
+
+.datePicker {
+    -fx-background-color: white;
+    -fx-border-color: black;
+    -fx-border-width: 1px;
+    -fx-border-radius: 5px;
+    -fx-padding: 5px;
+    -fx-font-size: 14px;
+}
+
+.defaultTxtField{
+    -fx-background-color: white;
+    -fx-background-radius: 20;
+    -fx-border-radius: 20;
+    -fx-border-color: black;
+    -fx-text-fill: #b1b1b1;
+}
+
+
+

@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="640.0" prefWidth="360.0" stylesheets="@../../styles/ConcernScene.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.communitask2.ConcernSceneController">
+   <children>
+      <BorderPane prefHeight="640.0" prefWidth="360.0" AnchorPane.bottomAnchor="-11.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <top>
+            <ScrollPane hbarPolicy="NEVER" prefHeight="640.0" prefWidth="360.0" style="-fx-background-color: #FFFFFF;" styleClass="scroll-bar" stylesheets="@../../styles/ConcernScene.css" BorderPane.alignment="CENTER">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="1010.0" prefWidth="361.0">
+                     <children>
+                        <BorderPane prefHeight="1016.0" prefWidth="360.0" AnchorPane.bottomAnchor="-6.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <top>
+                              <Pane fx:id="scrollPane" prefHeight="1006.0" prefWidth="360.0" style="-fx-background-color: #FFFFFF;" stylesheets="@../../styles/ConcernScene.css" BorderPane.alignment="CENTER">
+                                 <children>
+                                    <Text id="ConcernTitle" accessibleRole="BUTTON" boundsType="VISUAL" depthTest="DISABLE" layoutX="27.0" layoutY="75.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="txtTitle" text="Concerns" wrappingWidth="181.13671875">
+                                       <font>
+                                          <Font size="36.0" />
+                                       </font>
+                                    </Text>
+                                    <Text fill="#aeadad" layoutX="27.0" layoutY="100.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="subheading" text="Raise Issues and Concerns" wrappingWidth="181.13671875">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                    </Text>
+                                    <Button fx:id="pendingConcern" alignment="CENTER" layoutX="192.0" layoutY="141.0" mnemonicParsing="false" onMouseClicked="#pendings" prefHeight="140.0" prefWidth="140.0" styleClass="pendingBtn" stylesheets="@loginform.css" text="Pending Concerns" textAlignment="CENTER">
+                                       <padding>
+                                          <Insets top="80.0" />
+                                       </padding>
+                                       <cursor>
+                                          <Cursor fx:constant="DEFAULT" />
+                                       </cursor>
+                                     
+                                    </Button>
+                                    <Button fx:id="reporConcern" layoutX="30.0" layoutY="141.0" mnemonicParsing="false" onMouseClicked="#ReportEvent" prefHeight="140.0" prefWidth="140.0" styleClass="reportBtn" stylesheets="@loginform.css" text="Report Concerns" textAlignment="CENTER">
+                                       <padding>
+                                          <Insets top="80.0" />
+                                       </padding>
+                                       <cursor>
+                                          <Cursor fx:constant="DEFAULT" />
+                                       </cursor>
+                                      
+                                    </Button>
+                                    <Text layoutX="25.0" layoutY="322.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="txtTitle" text="History" wrappingWidth="83.13671875">
+                                       <font>
+                                          <Font size="24.0" />
+                                       </font>
+                                    </Text>
+                                    <Pane layoutX="26.0" layoutY="336.0" prefHeight="134.0" prefWidth="311.0" styleClass="rectanglePhotos" stylesheets="@../../styles/ConcernScene.css">
+                                       <children>
+                                          <Rectangle id="myShape" arcHeight="24.0" arcWidth="26.0" fill="#f0f0f0" height="135.0" layoutY="1.0" stroke="#861919" strokeDashOffset="12.0" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeMiterLimit="14.0" strokeType="INSIDE" strokeWidth="0.0" styleClass="myShape" width="313.0">
+                                            
+                                          </Rectangle>
+                                          <Text fill="#363636" layoutX="129.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="recHeading" text="Road Issue" wrappingWidth="86.63671875">
+                                             <font>
+                                                <Font size="24.0" />
+                                             </font>
+                                          </Text>
+                                          <ImageView fitHeight="134.0" fitWidth="118.0" layoutX="-1.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../../images.png/ConcernScene.image2.png" />
+                                             </image>
+                                          </ImageView>
+                                          <Text layoutX="129.0" layoutY="53.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="recsubHeading" text="by Taylor Batumbakal" wrappingWidth="126.47006225585938">
+                                             <font>
+                                                <Font name="Adine Kirnberg Alternate" size="14.0" />
+                                             </font>
+                                          </Text>
+                                          <Text fill="#363636" layoutX="144.0" layoutY="72.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="recLoc" text="123 Main Street, Village 5" wrappingWidth="126.47006225585938">
+                                             <font>
+                                                <Font size="14.0" />
+                                             </font>
+                                          </Text>
+                                          <ImageView fitHeight="14.0" fitWidth="11.0" layoutX="129.0" layoutY="62.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../../images.png/octicon_location-16.png" />
+                                             </image>
+                                          </ImageView>
+                                          <Button layoutX="221.0" layoutY="88.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="83.0" stylesheets="@../../styles/ConcernScene.css" text="Resolved">
+                                             <styleClass>
+                                                <String fx:value="buttons" />
+                                                <String fx:value="resolveBtn" />
+                                             </styleClass>
+                                          </Button>
+                                          <Button layoutX="129.0" layoutY="88.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="83.0" stylesheets="@../../styles/ConcernScene.css" text="Reshare">
+                                             <styleClass>
+                                                <String fx:value="buttons" />
+                                                <String fx:value="reshareBtn" />
+                                             </styleClass>
+                                          </Button>
+                                       </children>
+                                    </Pane>
+                                    <ImageView fitHeight="78.0" fitWidth="71.0" layoutX="250.0" layoutY="28.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../images.png/circleicon.png" />
+                                       </image>
+                                    </ImageView>
+                                    <Pane layoutX="26.0" layoutY="489.0" prefHeight="134.0" prefWidth="311.0" styleClass="rectanglePhotos" stylesheets="@../../styles/ConcernScene.css">
+                                       <children>
+                                          <Rectangle id="myShape" arcHeight="24.0" arcWidth="26.0" fill="#f0f0f0" height="135.0" layoutY="3.0" stroke="#861919" strokeDashOffset="12.0" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeMiterLimit="14.0" strokeType="INSIDE" strokeWidth="0.0" styleClass="myShape" width="313.0">
+                                             <cursor>
+                                                <Cursor fx:constant="DEFAULT" />
+                                             </cursor>
+                                          </Rectangle>
+                                          <Text fill="#363636" layoutX="129.0" layoutY="37.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="recHeading" text="Reporting a Flood" wrappingWidth="155.3033905029297">
+                                             <font>
+                                                <Font size="24.0" />
+                                             </font>
+                                          </Text>
+                                          <ImageView fitHeight="134.0" fitWidth="118.0" layoutX="-1.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../../images.png/ConcernScene.image3.png" />
+                                             </image>
+                                          </ImageView>
+                                          <Text layoutX="129.0" layoutY="53.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="recsubHeading" text="by Rose Dawson" wrappingWidth="126.47006225585938">
+                                             <font>
+                                                <Font name="Adine Kirnberg Alternate" size="14.0" />
+                                             </font>
+                                          </Text>
+                                          <Text fill="#363636" layoutX="144.0" layoutY="72.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="recLoc" text="123 Main Street, Village 5" wrappingWidth="126.47006225585938">
+                                             <font>
+                                                <Font size="14.0" />
+                                             </font>
+                                          </Text>
+                                          <ImageView fitHeight="14.0" fitWidth="11.0" layoutX="129.0" layoutY="62.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../../images.png/octicon_location-16.png" />
+                                             </image>
+                                          </ImageView>
+                                          <Button layoutX="221.0" layoutY="88.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="83.0" stylesheets="@loginform.css" text="Resolved">
+                                             <styleClass>
+                                                <String fx:value="buttons" />
+                                                <String fx:value="resolveBtn" />
+                                             </styleClass>
+                                          </Button>
+                                          <Button layoutX="129.0" layoutY="88.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="83.0" stylesheets="@loginform.css" text="Reshare">
+                                             <styleClass>
+                                                <String fx:value="buttons" />
+                                                <String fx:value="reshareBtn" />
+                                             </styleClass>
+                                          </Button>
+                                       </children>
+                                    </Pane>
+                                    <Pane layoutX="8.0" layoutY="607.0" prefHeight="65.0" prefWidth="360.0" stylesheets="@../../styles/ConcernScene.css">
+                                       <children>
+                                          <Pane layoutX="18.0" layoutY="37.0" prefHeight="134.0" prefWidth="311.0" styleClass="rectanglePhotos" stylesheets="@loginform.css">
+                                             <children>
+                                                <Rectangle id="myShape" arcHeight="24.0" arcWidth="26.0" fill="#f0f0f0" height="135.0" layoutY="3.0" stroke="#861919" strokeDashOffset="12.0" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeMiterLimit="14.0" strokeType="INSIDE" strokeWidth="0.0" styleClass="myShape" width="313.0">
+                                                   <cursor>
+                                                      <Cursor fx:constant="DEFAULT" />
+                                                   </cursor>
+                                                </Rectangle>
+                                                <Text fill="#363636" layoutX="129.0" layoutY="37.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="recHeading" text="Blocked Sewages" wrappingWidth="155.3033905029297">
+                                                   <font>
+                                                      <Font size="24.0" />
+                                                   </font>
+                                                </Text>
+                                                <ImageView fitHeight="134.0" fitWidth="118.0" layoutX="-1.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@../../images.png/ConcernScene.image1.png" />
+                                                   </image>
+                                                </ImageView>
+                                                <Text layoutX="129.0" layoutY="53.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="recsubHeading" text="by Rose Dawson" wrappingWidth="126.47006225585938">
+                                                   <font>
+                                                      <Font name="Adine Kirnberg Alternate" size="14.0" />
+                                                   </font>
+                                                </Text>
+                                                <Text fill="#363636" layoutX="144.0" layoutY="72.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="recLoc" text="123 Main Street, Village 5" wrappingWidth="126.47006225585938">
+                                                   <font>
+                                                      <Font size="14.0" />
+                                                   </font>
+                                                </Text>
+                                                <ImageView fitHeight="14.0" fitWidth="11.0" layoutX="129.0" layoutY="62.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@../../images.png/octicon_location-16.png" />
+                                                   </image>
+                                                </ImageView>
+                                                <Button layoutX="221.0" layoutY="88.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="83.0" stylesheets="@loginform.css" text="Resolved">
+                                                   <styleClass>
+                                                      <String fx:value="buttons" />
+                                                      <String fx:value="resolveBtn" />
+                                                   </styleClass>
+                                                </Button>
+                                                <Button layoutX="129.0" layoutY="88.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="83.0" stylesheets="@loginform.css" text="Reshare">
+                                                   <styleClass>
+                                                      <String fx:value="buttons" />
+                                                      <String fx:value="reshareBtn" />
+                                                   </styleClass>
+                                                </Button>
+                                             </children>
+                                          </Pane>
+                                          <Pane layoutX="18.0" layoutY="196.0" prefHeight="134.0" prefWidth="311.0" styleClass="rectanglePhotos" stylesheets="@loginform.css">
+                                             <children>
+                                                <Rectangle id="myShape" arcHeight="24.0" arcWidth="26.0" fill="#f0f0f0" height="135.0" layoutY="3.0" stroke="#861919" strokeDashOffset="12.0" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeMiterLimit="14.0" strokeType="INSIDE" strokeWidth="0.0" styleClass="myShape" width="313.0">
+                                                   <cursor>
+                                                      <Cursor fx:constant="DEFAULT" />
+                                                   </cursor>
+                                                </Rectangle>
+                                                <Text fill="#363636" layoutX="129.0" layoutY="37.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="recHeading" text="Reporting a Flood" wrappingWidth="155.3033905029297">
+                                                   <font>
+                                                      <Font size="24.0" />
+                                                   </font>
+                                                </Text>
+                                                <ImageView fitHeight="134.0" fitWidth="118.0" layoutX="-1.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@../../images.png/ConcernScene.image3.png" />
+                                                   </image>
+                                                </ImageView>
+                                                <Text layoutX="129.0" layoutY="53.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="recsubHeading" text="by Rose Dawson" wrappingWidth="126.47006225585938">
+                                                   <font>
+                                                      <Font name="Adine Kirnberg Alternate" size="14.0" />
+                                                   </font>
+                                                </Text>
+                                                <Text fill="#363636" layoutX="144.0" layoutY="72.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="recLoc" text="123 Main Street, Village 5" wrappingWidth="126.47006225585938">
+                                                   <font>
+                                                      <Font size="14.0" />
+                                                   </font>
+                                                </Text>
+                                                <ImageView fitHeight="14.0" fitWidth="11.0" layoutX="129.0" layoutY="62.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@../../images.png/octicon_location-16.png" />
+                                                   </image>
+                                                </ImageView>
+                                                <Button layoutX="221.0" layoutY="88.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="83.0" stylesheets="@loginform.css" text="Resolved">
+                                                   <styleClass>
+                                                      <String fx:value="buttons" />
+                                                      <String fx:value="resolveBtn" />
+                                                   </styleClass>
+                                                </Button>
+                                                <Button layoutX="129.0" layoutY="88.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="83.0" stylesheets="@loginform.css" text="Reshare">
+                                                   <styleClass>
+                                                      <String fx:value="buttons" />
+                                                      <String fx:value="reshareBtn" />
+                                                   </styleClass>
+                                                </Button>
+                                             </children>
+                                          </Pane>
+                                       </children>
+                                    </Pane>
+                                    <ImageView fitHeight="65.0" fitWidth="74.0" layoutX="67.0" layoutY="161.0" onMouseClicked="#ToAccountScene" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../images.png/mdi_megaphone-outline%20(1).png" />
+                                       </image>
+                                       <cursor>
+                                          <Cursor fx:constant="OPEN_HAND" />
+                                       </cursor>
+                                    </ImageView>
+                                    <ImageView fitHeight="65.0" fitWidth="74.0" layoutX="230.0" layoutY="161.0" opacity="0.75" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../images.png/pending-icon.png" />
+                                       </image>
+                                    </ImageView>
+                                 </children>
+                              </Pane>
+                           </top>
+                        </BorderPane>
+                     </children>
+                  </AnchorPane>
+              </content>
+            </ScrollPane>
+         </top>
+         <bottom>
+            <Pane prefHeight="65.0" prefWidth="360.0" styleClass="iconbtn" stylesheets="@../../styles/GeneralStylesheet.css" BorderPane.alignment="CENTER">
+               <children>
+                  <AnchorPane layoutY="1.0" prefHeight="88.0" prefWidth="360.0">
+                     <children>
+                        <ImageView fitHeight="88.0" fitWidth="360.0" layoutY="-70.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../images.png/Rectangle%207.png" />
+                           </image>
+                        </ImageView>
+                        <HBox alignment="CENTER" layoutX="4.0" layoutY="-52.0" prefHeight="51.0" prefWidth="360.0" styleClass="hbox" stylesheets="@../../styles/GeneralStylesheet.css">
+                           <children>
+                              <ImageView fx:id="homeBtn" fitHeight="25.0" fitWidth="25.0" onMouseClicked="#backToHome" pickOnBounds="true" preserveRatio="true" styleClass="iconbtn">
+                                 <HBox.margin>
+                                    <Insets bottom="30.0" left="20.0" right="30.0" />
+                                 </HBox.margin>
+                                 <image>
+                                    <Image url="@../../images.png/Group.png" />
+                                 </image>
+                                 <effect>
+                                    <ColorAdjust />
+                                 </effect>
+                                 <cursor>
+                                    <Cursor fx:constant="OPEN_HAND" />
+                                 </cursor>
+                              </ImageView>
+                              <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true" styleClass="iconBtn" HBox.hgrow="NEVER">
+                                 <HBox.margin>
+                                    <Insets bottom="30.0" left="20.0" right="30.0" />
+                                 </HBox.margin>
+                                 <image>
+                                    <Image url="@../../images.png/mi_notification.png" />
+                                 </image>
+                                 <effect>
+                                    <ColorAdjust />
+                                 </effect>
+                                 <cursor>
+                                    <Cursor fx:constant="OPEN_HAND" />
+                                 </cursor>
+                              </ImageView>
+                              <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true" styleClass="iconBtn" HBox.hgrow="NEVER">
+                                 <HBox.margin>
+                                    <Insets bottom="30.0" left="20.0" right="30.0" />
+                                 </HBox.margin>
+                                 <image>
+                                    <Image url="@../../images.png/tabler_message.png" />
+                                 </image>
+                                 <effect>
+                                    <ColorAdjust />
+                                 </effect>
+                                 <cursor>
+                                    <Cursor fx:constant="OPEN_HAND" />
+                                 </cursor>
+                              </ImageView>
+                              <ImageView fx:id="AccounScene" fitHeight="25.0" fitWidth="25.0" onMouseClicked="#ToAccountScene" pickOnBounds="true" preserveRatio="true" styleClass="iconBtn" HBox.hgrow="NEVER">
+                                 <HBox.margin>
+                                    <Insets bottom="30.0" left="20.0" right="30.0" />
+                                 </HBox.margin>
+                                 <image>
+                                    <Image url="@../../images.png/Group%20(1).png" />
+                                 </image>
+                                 <effect>
+                                    <ColorAdjust />
+                                 </effect>
+                                 <cursor>
+                                    <Cursor fx:constant="OPEN_HAND" />
+                                 </cursor>
+                              </ImageView>
+                           </children>
+                        </HBox>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </Pane>
+         </bottom>
+      </BorderPane>
+   </children>
+   <cursor>
+      <Cursor fx:constant="DEFAULT" />
+   </cursor>
+</AnchorPane>
