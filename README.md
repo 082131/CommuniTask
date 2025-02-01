@@ -153,5 +153,19 @@ public ObservableList<Complaint> fetchAllComplaints() {
     return complaintsList;
 }
 ```
+##How to use CommuniTask
+#User Registration & Login
+Open the application and navigate to the login page.
+Click "Register" if you are a new user.
+Provide your full name, email, and a secure password.
+Once registered, log in with your credentials.
+#Submitting a Complaint
+Navigate to the "Submit Complaint" section.
+Provide a detailed description of the issue.
+Select the type of complaint (e.g., sanitation, noise, health, etc.).
+Attach a photo for better context (optional but recommended).
+#Admin Dashboard 
+Admins login to access the dashboard.
+View a list of submitted complaints with filtering options.
 
 
