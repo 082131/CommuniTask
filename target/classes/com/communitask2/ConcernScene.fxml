@@ -33,12 +33,12 @@
                                           <Font size="36.0" />
                                        </font>
                                     </Text>
-                                    <Text fill="#aeadad" layoutX="27.0" layoutY="100.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="subheading" text="Raise Issues and Concerns" wrappingWidth="181.13671875">
+                                    <Text fill="#aeadad" layoutX="27.0" layoutY="97.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="subheading" text="Raise Issues and Concerns" wrappingWidth="196.13671875">
                                        <font>
                                           <Font size="18.0" />
                                        </font>
                                     </Text>
-                                    <Button fx:id="pendingConcern" alignment="CENTER" layoutX="192.0" layoutY="141.0" mnemonicParsing="false" onMouseClicked="#pendings" prefHeight="140.0" prefWidth="140.0" styleClass="pendingBtn" stylesheets="@loginform.css" text="Pending Concerns" textAlignment="CENTER">
+                                    <Button fx:id="pendingConcern" alignment="CENTER" layoutX="192.0" layoutY="141.0" mnemonicParsing="false" onMouseClicked="#pendings" prefHeight="140.0" prefWidth="140.0" styleClass="pendingBtn" stylesheets="@GeneralStylesheet.css" text="Pending Concerns" textAlignment="CENTER">
                                        <padding>
                                           <Insets top="80.0" />
                                        </padding>
@@ -47,7 +47,7 @@
                                        </cursor>
                                      
                                     </Button>
-                                    <Button fx:id="reporConcern" layoutX="30.0" layoutY="141.0" mnemonicParsing="false" onMouseClicked="#ReportEvent" prefHeight="140.0" prefWidth="140.0" styleClass="reportBtn" stylesheets="@loginform.css" text="Report Concerns" textAlignment="CENTER">
+                                    <Button fx:id="reporConcern" layoutX="30.0" layoutY="141.0" mnemonicParsing="false" onMouseClicked="#ReportEvent" prefHeight="140.0" prefWidth="140.0" styleClass="reportBtn" stylesheets="@GeneralStylesheet.css" text="Report Concerns" textAlignment="CENTER">
                                        <padding>
                                           <Insets top="80.0" />
                                        </padding>
@@ -56,7 +56,7 @@
                                        </cursor>
                                       
                                     </Button>
-                                    <Text layoutX="25.0" layoutY="322.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="txtTitle" text="History" wrappingWidth="83.13671875">
+                                    <Text layoutX="26.0" layoutY="322.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="subheading" text="History" wrappingWidth="83.13671875">
                                        <font>
                                           <Font size="24.0" />
                                        </font>
@@ -142,13 +142,13 @@
                                                 <Image url="@../../images.png/octicon_location-16.png" />
                                              </image>
                                           </ImageView>
-                                          <Button layoutX="221.0" layoutY="88.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="83.0" stylesheets="@loginform.css" text="Resolved">
+                                          <Button layoutX="221.0" layoutY="88.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="83.0" stylesheets="@GeneralStylesheet.css" text="Resolved">
                                              <styleClass>
                                                 <String fx:value="buttons" />
                                                 <String fx:value="resolveBtn" />
                                              </styleClass>
                                           </Button>
-                                          <Button layoutX="129.0" layoutY="88.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="83.0" stylesheets="@loginform.css" text="Reshare">
+                                          <Button layoutX="129.0" layoutY="88.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="83.0" stylesheets="@GeneralStylesheet.css" text="Reshare">
                                              <styleClass>
                                                 <String fx:value="buttons" />
                                                 <String fx:value="reshareBtn" />
@@ -158,7 +158,7 @@
                                     </Pane>
                                     <Pane layoutX="8.0" layoutY="607.0" prefHeight="65.0" prefWidth="360.0" stylesheets="@../../styles/ConcernScene.css">
                                        <children>
-                                          <Pane layoutX="18.0" layoutY="37.0" prefHeight="134.0" prefWidth="311.0" styleClass="rectanglePhotos" stylesheets="@loginform.css">
+                                          <Pane layoutX="18.0" layoutY="37.0" prefHeight="134.0" prefWidth="311.0" styleClass="rectanglePhotos" stylesheets="@GeneralStylesheet.css">
                                              <children>
                                                 <Rectangle id="myShape" arcHeight="24.0" arcWidth="26.0" fill="#f0f0f0" height="135.0" layoutY="3.0" stroke="#861919" strokeDashOffset="12.0" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeMiterLimit="14.0" strokeType="INSIDE" strokeWidth="0.0" styleClass="myShape" width="313.0">
                                                    <cursor>
@@ -190,13 +190,13 @@
                                                       <Image url="@../../images.png/octicon_location-16.png" />
                                                    </image>
                                                 </ImageView>
-                                                <Button layoutX="221.0" layoutY="88.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="83.0" stylesheets="@loginform.css" text="Resolved">
+                                                <Button layoutX="221.0" layoutY="88.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="83.0" stylesheets="@GeneralStylesheet.css" text="Resolved">
                                                    <styleClass>
                                                       <String fx:value="buttons" />
                                                       <String fx:value="resolveBtn" />
                                                    </styleClass>
                                                 </Button>
-                                                <Button layoutX="129.0" layoutY="88.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="83.0" stylesheets="@loginform.css" text="Reshare">
+                                                <Button layoutX="129.0" layoutY="88.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="83.0" stylesheets="@GeneralStylesheet.css" text="Reshare">
                                                    <styleClass>
                                                       <String fx:value="buttons" />
                                                       <String fx:value="reshareBtn" />
@@ -204,7 +204,7 @@
                                                 </Button>
                                              </children>
                                           </Pane>
-                                          <Pane layoutX="18.0" layoutY="196.0" prefHeight="134.0" prefWidth="311.0" styleClass="rectanglePhotos" stylesheets="@loginform.css">
+                                          <Pane layoutX="18.0" layoutY="196.0" prefHeight="134.0" prefWidth="311.0" styleClass="rectanglePhotos" stylesheets="@GeneralStylesheet.css">
                                              <children>
                                                 <Rectangle id="myShape" arcHeight="24.0" arcWidth="26.0" fill="#f0f0f0" height="135.0" layoutY="3.0" stroke="#861919" strokeDashOffset="12.0" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeMiterLimit="14.0" strokeType="INSIDE" strokeWidth="0.0" styleClass="myShape" width="313.0">
                                                    <cursor>
@@ -236,13 +236,13 @@
                                                       <Image url="@../../images.png/octicon_location-16.png" />
                                                    </image>
                                                 </ImageView>
-                                                <Button layoutX="221.0" layoutY="88.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="83.0" stylesheets="@loginform.css" text="Resolved">
+                                                <Button layoutX="221.0" layoutY="88.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="83.0" stylesheets="@GeneralStylesheet.css" text="Resolved">
                                                    <styleClass>
                                                       <String fx:value="buttons" />
                                                       <String fx:value="resolveBtn" />
                                                    </styleClass>
                                                 </Button>
-                                                <Button layoutX="129.0" layoutY="88.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="83.0" stylesheets="@loginform.css" text="Reshare">
+                                                <Button layoutX="129.0" layoutY="88.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="83.0" stylesheets="@GeneralStylesheet.css" text="Reshare">
                                                    <styleClass>
                                                       <String fx:value="buttons" />
                                                       <String fx:value="reshareBtn" />
@@ -252,7 +252,7 @@
                                           </Pane>
                                        </children>
                                     </Pane>
-                                    <ImageView fitHeight="65.0" fitWidth="74.0" layoutX="67.0" layoutY="161.0" onMouseClicked="#ToAccountScene" pickOnBounds="true" preserveRatio="true">
+                                    <ImageView fitHeight="65.0" fitWidth="74.0" layoutX="67.0" layoutY="161.0" onMouseClicked="#ReportEvent" pickOnBounds="true" preserveRatio="true">
                                        <image>
                                           <Image url="@../../images.png/mdi_megaphone-outline%20(1).png" />
                                        </image>
@@ -260,7 +260,7 @@
                                           <Cursor fx:constant="OPEN_HAND" />
                                        </cursor>
                                     </ImageView>
-                                    <ImageView fitHeight="65.0" fitWidth="74.0" layoutX="230.0" layoutY="161.0" opacity="0.75" pickOnBounds="true" preserveRatio="true">
+                                    <ImageView fx:id="pendingIcon" fitHeight="65.0" fitWidth="74.0" layoutX="230.0" layoutY="161.0" onMouseClicked="#pendings" opacity="0.75" pickOnBounds="true" preserveRatio="true">
                                        <image>
                                           <Image url="@../../images.png/pending-icon.png" />
                                        </image>
@@ -291,7 +291,7 @@
                                     <Insets bottom="30.0" left="20.0" right="30.0" />
                                  </HBox.margin>
                                  <image>
-                                    <Image url="@../../images.png/Group.png" />
+                                    <Image url="@../../images.png/Group_1.png" />
                                  </image>
                                  <effect>
                                     <ColorAdjust />

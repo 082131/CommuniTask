@@ -1,1 +1,10 @@
+com\communitask2\SceneSwitcher.class
+com\communitask2\App.class
+com\communitask2\HomeSceneController.class
+com\communitask2\LoginController.class
+com\communitask2\database.class
+com\communitask2\ConcernSceneController.class
+com\communitask2\AccountSceneController.class
+com\communitask2\PendingSceneController.class
 module-info.class
+com\communitask2\ComplainSubmissionController.class

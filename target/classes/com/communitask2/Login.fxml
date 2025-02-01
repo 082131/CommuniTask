@@ -3,9 +3,11 @@
 <?import java.lang.String?>
 <?import javafx.scene.Cursor?>
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
 <?import javafx.scene.control.ComboBox?>
 <?import javafx.scene.control.DatePicker?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
 <?import javafx.scene.control.ScrollPane?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.effect.ColorAdjust?>
@@ -47,6 +49,9 @@
                                                    <image>
                                                       <Image url="@../../images.png/Registration.shape.png" />
                                                    </image>
+                                                   <cursor>
+                                                      <Cursor fx:constant="DEFAULT" />
+                                                   </cursor>
                                                 </ImageView>
                                                 <TextField id="textNorm" fx:id="SurnameField" layoutX="57.0" layoutY="142.0" prefHeight="40.0" prefWidth="249.0" styleClass="defaultTxtField" stylesheets="@../../styles/registerscene.css">
                                                    <effect>
@@ -58,10 +63,14 @@
                                                       <Font name="HandoTrial-Regular" size="11.0" />
                                                    </font>
                                                 </Text>
-                                                <TextField id="textNorm" fx:id="FirstnameField" layoutX="57.0" layoutY="219.0" prefHeight="40.0" prefWidth="249.0" styleClass="defaultTxtField" stylesheets="@../../styles/registerscene.css">
+                                                <TextField id="textNorm" fx:id="FirstnameField" layoutX="57.0" layoutY="219.0" prefHeight="40.0" prefWidth="249.0" stylesheets="@../../styles/registerscene.css">
                                                    <effect>
                                                       <ColorAdjust />
                                                    </effect>
+                                                   <styleClass>
+                                                      <String fx:value="defaultTxtField" />
+                                                      <String fx:value="defaultTxtField" />
+                                                   </styleClass>
                                                 </TextField>
                                                 <Text layoutX="57.0" layoutY="209.0" lineSpacing="1.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="defaultTxt" text="First Name" wrappingWidth="52.884117126464844">
                                                    <font>
@@ -95,12 +104,12 @@
                                                    </font>
                                                 </Text>
                                                 <ComboBox fx:id="MaritalCB" layoutX="57.0" layoutY="466.0" prefHeight="27.0" prefWidth="248.0" styleClass="cbBox" stylesheets="@../../styles/registerscene.css" />
-                                                <TextField id="textNorm" fx:id="Barangay" layoutX="57.0" layoutY="541.0" prefHeight="40.0" prefWidth="249.0" styleClass="defaultTxtField" stylesheets="@../../styles/registerscene.css">
+                                                <TextField id="textNorm" fx:id="ContactNum" layoutX="57.0" layoutY="530.0" prefHeight="40.0" prefWidth="249.0" styleClass="defaultTxtField" stylesheets="@../../styles/registerscene.css">
                                                    <effect>
                                                       <ColorAdjust />
                                                    </effect>
                                                 </TextField>
-                                                <Text layoutX="57.0" layoutY="531.0" lineSpacing="1.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="defaultTxt" text="Barangay">
+                                                <Text layoutX="55.0" layoutY="520.0" lineSpacing="1.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="defaultTxt" text="Contact Number">
                                                    <font>
                                                       <Font name="HandoTrial-Regular" size="11.0" />
                                                    </font>
@@ -157,6 +166,16 @@
                                                    </font>
                                                 </Label>
                                                 <DatePicker fx:id="DatePicker" layoutX="58.0" layoutY="387.0" prefHeight="23.0" prefWidth="127.0" styleClass="datePicker" stylesheets="@../../styles/registerscene.css" />
+                                                <TextField id="textNorm" fx:id="Barangay" layoutX="57.0" layoutY="611.0" prefHeight="40.0" prefWidth="249.0" styleClass="defaultTxtField" stylesheets="@../../styles/registerscene.css">
+                                                   <effect>
+                                                      <ColorAdjust />
+                                                   </effect>
+                                                </TextField>
+                                                <Text layoutX="55.0" layoutY="601.0" lineSpacing="1.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="defaultTxt" text="Barangay">
+                                                   <font>
+                                                      <Font name="HandoTrial-Regular" size="11.0" />
+                                                   </font>
+                                                </Text>
                                              </children>
                                           </Pane>
                                        </children>
@@ -191,17 +210,17 @@
                         </Pane>
                         <Pane id="mainPane" fx:id="LoginPane" prefHeight="640.0" prefWidth="360.0" style="-fx-background-color: #FFFFFF;" stylesheets="@../../styles/GeneralStylesheet.css">
                            <children>
-                              <Text id="txtTitle" boundsType="VISUAL" fill="#004aad" layoutX="55.0" layoutY="278.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="txtTitle" text="Comm">
+                              <Text id="txtTitle" boundsType="VISUAL" fill="#004aad" layoutX="43.0" layoutY="280.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="commu-Title" text="Comm">
                                  <font>
                                     <Font size="36.0" />
                                  </font>
                               </Text>
-                              <Text id="txtTitle" boundsType="VISUAL" fill="#e84949" layoutX="165.0" layoutY="278.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="txtTitle" text="uni">
+                              <Text id="txtTitle" boundsType="VISUAL" fill="#e84949" layoutX="164.0" layoutY="280.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="commu-Title" text="uni">
                                  <font>
                                     <Font size="36.0" />
                                  </font>
                               </Text>
-                              <Text boundsType="VISUAL" fill="#e69d1e" layoutX="218.0" layoutY="278.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="txtTitle" text="TASK" wrappingWidth="89.947265625">
+                              <Text boundsType="VISUAL" fill="#e69d1e" layoutX="222.0" layoutY="280.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="commu-Title" text="TASK" wrappingWidth="105.97265625">
                                  <font>
                                     <Font size="36.0" />
                                  </font>
@@ -216,11 +235,21 @@
                                     <ColorAdjust />
                                  </effect>
                               </TextField>
-                              <TextField id="textNorm" fx:id="passwordLoginField" layoutX="52.0" layoutY="392.0" prefHeight="40.0" prefWidth="270.0" promptText="   Password" styleClass="txtNorm" stylesheets="@../../styles/GeneralStylesheet.css">
-                                 <effect>
-                                    <ColorAdjust />
-                                 </effect>
-                              </TextField>
+                              <!-- Updated PasswordField and TextField -->
+                                <TextField id="textNorm" fx:id="visiblePasswordField" layoutX="52.0" layoutY="392.0" prefHeight="40.0" prefWidth="270.0" promptText="   Password" styleClass="txtNorm" stylesheets="@../../styles/GeneralStylesheet.css" visible="false">
+                                    <effect>
+                                        <ColorAdjust />
+                                    </effect>
+                                </TextField>
+
+                                <PasswordField id="textNorm" fx:id="passwordLoginField" layoutX="52.0" layoutY="392.0" prefHeight="40.0" prefWidth="270.0" promptText="   Password" styleClass="txtNorm" stylesheets="@../../styles/GeneralStylesheet.css">
+                                    <effect>
+                                        <ColorAdjust />
+                                    </effect>
+                                </PasswordField>
+
+                                <!-- Add this CheckBox for toggling password visibility -->
+                                <CheckBox fx:id="showPasswordCheckBox" layoutX="52.0" layoutY="440.0" mnemonicParsing="false" onAction="#togglePasswordVisibility" text="Show Password" />
                               <Button fx:id="btnLogin" layoutX="52.0" layoutY="494.0" mnemonicParsing="false" onAction="#buttonHandler" prefHeight="40.0" prefWidth="270.0" styleClass="buttons" stylesheets="@../../styles/GeneralStylesheet.css" text="LOGIN" />
                               <Button fx:id="RegisterBtn" layoutX="52.0" layoutY="548.0" mnemonicParsing="false" onMouseClicked="#ToRegisterPane1" prefHeight="40.0" prefWidth="270.0" stylesheets="@../../styles/GeneralStylesheet.css" text="REGISTER" textFill="WHITE">
                                  <styleClass>
@@ -228,8 +257,8 @@
                                     <String fx:value="btnRegister" />
                                  </styleClass>
                               </Button>
-                              <Text layoutX="88.0" layoutY="307.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="quoteTxt" text="Together We Ask, Together We Act!" />
-                              <Label fx:id="errMess1" layoutX="60.0" layoutY="440.0" styleClass="errMess" stylesheets="@../../styles/GeneralStylesheet.css">
+                              <Text layoutX="100.0" layoutY="298.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="quoteTxt" text="Together We Ask, Together We Act!" />
+                              <Label fx:id="errMess1" alignment="CENTER_RIGHT" layoutX="215.0" layoutY="440.0" prefHeight="15.0" prefWidth="100.0" styleClass="errMess" stylesheets="@../../styles/GeneralStylesheet.css" textAlignment="RIGHT">
                                  <font>
                                     <Font size="10.0" />
                                  </font>

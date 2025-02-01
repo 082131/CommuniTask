@@ -9,10 +9,11 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to ed
 .txtTitle{
     -fx-font-weight: bold;
     -fx-font-family: 'Poppins';
+    -fx-font-size: 40px;
 }
 
 .subheading {
-    -fx-font-size: 12.97px;
+    -fx-font-size: 15px;
     -fx-text-fill: #868686; 
     -fx-font-family: 'Poppins';
     -fx-font-weight: 700;
@@ -114,4 +115,6 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to ed
 .scroll-bar .corner{
     -fx-padding:0;
 }
+
+
 
