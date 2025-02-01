@@ -17,7 +17,7 @@ import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.Pane;
 
 public class AccountSceneController implements Initializable {
-
+    
     @FXML
     private TextField AddressField;
     @FXML
@@ -49,11 +49,7 @@ public class AccountSceneController implements Initializable {
 
     private Connection connection;
     @FXML
-    private ImageView homeBtn;
-    @FXML
-    private ImageView ConcernBtn;
-    @FXML
-    private ImageView AccounScene;
+    private Button logoutbtn;
 
     @Override
     public void initialize(URL url, ResourceBundle rb) {
@@ -72,7 +68,7 @@ public class AccountSceneController implements Initializable {
 
         // Fetch logged-in user's email from LoginController
         String userEmail = LoginController.getLoggedInUserEmail();
-
+        
         if (userEmail != null && !userEmail.isEmpty()) {
             loadUserData(userEmail);
         } else {
@@ -86,7 +82,7 @@ public class AccountSceneController implements Initializable {
             return;
         }
 
-        String query = "SELECT first_name, email, age, birthday, barangay FROM users WHERE email = ?";
+        String query = "SELECT first_name, email, age, contactnum, birthday, barangay FROM users WHERE email = ?";
 
         try (PreparedStatement stmt = connection.prepareStatement(query)) {
             stmt.setString(1, userEmail);
@@ -102,6 +98,7 @@ public class AccountSceneController implements Initializable {
                     int age = rs.getInt("age");
                     String birthday = rs.getString("birthday");
                     String address = rs.getString("barangay");
+                    int contactNum = rs.getInt("contactnum");
 
                     // Now safely update the UI on the JavaFX application thread
                     Platform.runLater(() -> {
@@ -110,6 +107,7 @@ public class AccountSceneController implements Initializable {
                         AgeField.setText("        "+String.valueOf(age));
                         BdayField.setText(birthday);
                         AddressField.setText(address);
+                        NumField.setText(String.valueOf(contactNum));
                     });
 
                 } else {
@@ -130,7 +128,7 @@ public class AccountSceneController implements Initializable {
     void recordInfo(MouseEvent event) {
         // Logic for saving updated user information
     }
-
+    
     @FXML
     void toPersonalPane(MouseEvent event) {
         PersonalPane.toFront();
@@ -140,16 +138,9 @@ public class AccountSceneController implements Initializable {
     void toSecurityPane(MouseEvent event) {
         SecurityPane.toFront();
     }
-    
 
     @FXML
-    private void ToConcernScene(MouseEvent event) {
-        SceneSwitcher.switchScene(event, "ConcernScene.fxml");
+    private void logout(MouseEvent event) {
+        Platform.exit();
     }
-
-    @FXML
-    private void ToAccountScene(MouseEvent event) {
-        SceneSwitcher.switchScene(event, "AccountScene.fxml");
-    }
-  }
-
+}

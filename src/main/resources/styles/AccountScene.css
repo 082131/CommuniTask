@@ -10,7 +10,7 @@
     -fx-border-radius: 0; 
     -fx-background-radius: 20; 
     -fx-text-fill: #004AAD; 
-    -fx-padding: 10px 20px;
+    -fx-padding: 10px, 20px;
     -fx-font-size: 15px; 
     -fx-font-weight: bold; 
     -fx-cursor:hand;
@@ -56,4 +56,29 @@
     -fx-background-color: #363B38;
     -fx-text-fill: white;
     -fx-font-weight: 800;
+    -fx-font-size: 15px; 
+}
+.defaultBtn:hover{
+    -fx-font-family: Poppins;
+    -fx-background-radius: 9;
+    -fx-background-color: #F0F0F0;
+    -fx-text-fill:#004AAD;
+    -fx-font-weight: 800;
+    -fx-font-size: 15px; 
+}
+.logoutBtn{
+    -fx-font-family: Poppins;
+    -fx-background-radius: 9;
+    -fx-background-color: #004AAD;
+    -fx-text-fill:#F0F0F0;
+    -fx-font-weight: 800;
+    -fx-font-size: 15px; 
+}
+.logoutBtn:hover{
+    -fx-font-family: Poppins;
+    -fx-background-radius: 9;
+    -fx-background-color: #F0F0F0;
+    -fx-text-fill:#004AAD;
+    -fx-font-weight: 800;
+    -fx-font-size: 15px; 
 }

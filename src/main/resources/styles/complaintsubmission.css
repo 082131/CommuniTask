@@ -63,14 +63,16 @@
     -fx-font-weight: bold;
     -fx-background-color: #f2f2f2;
     -fx-padding: 5, 10;   
+    -fx-font-size: 15px;
 }
 
 .btnSubmit {
     -fx-background-color: #004AAD;
     -fx-text-fill: #FFFFFF;
     -fx-font-weight: bold;
-    -fx-border-radius: 10px;
-    -fx-background-radius: 10px;
+    -fx-border-radius: 8;
+    -fx-background-radius: 8;
+    -fx-font-size: 15px;
 }
 
 .btnSubmit:hover {
@@ -84,8 +86,9 @@
     -fx-font-family: 'Poppins';
     -fx-text-fill: #FFFFFF;
     -fx-font-weight: bold;
-    -fx-background-radius: 20;
-    -fx-border-radius: 20;     
+    -fx-border-radius: 8;
+    -fx-background-radius: 8;
+    -fx-font-size: 15px;
     -fx-border-width: 1;       
     -fx-background-color: #93B4D5; 
     -fx-padding: 5;   
@@ -107,5 +110,8 @@
     -fx-padding: 5;   
     fx-font-size: 14px;
 }
-
-
+.successMess{
+    -fx-text-fill: #32CD32;
+    -fx-font-style: italic;
+    -fx-font-size: 12px;
+}

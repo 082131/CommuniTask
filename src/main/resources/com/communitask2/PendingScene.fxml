@@ -84,7 +84,7 @@
                         <Image url="@../../images.png/octicon_location-16.png" />
                      </image>
                   </ImageView>
-                  <Button layoutX="212.0" layoutY="84.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="83.0" styleClass="resolveStatus" stylesheets="@loginform.css" text="Resolved">
+                  <Button layoutX="212.0" layoutY="84.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="83.0" styleClass="resolveStatus" stylesheets="@GeneralStylesheet.css" text="Resolved">
                      <font>
                         <Font name="HandoTrial-Regular" size="11.0" />
                      </font>
@@ -94,7 +94,7 @@
             </Pane>
             <Pane layoutX="7.0" layoutY="255.0" prefHeight="65.0" prefWidth="360.0" stylesheets="@../../styles/ConcernScene.css">
                <children>
-                  <Pane layoutX="18.0" layoutY="37.0" prefHeight="134.0" prefWidth="311.0" styleClass="rectanglePhotos" stylesheets="@loginform.css">
+                  <Pane layoutX="18.0" layoutY="37.0" prefHeight="134.0" prefWidth="311.0" styleClass="rectanglePhotos" stylesheets="@GeneralStylesheet.css">
                      <children>
                         <Rectangle id="myShape" arcHeight="24.0" arcWidth="26.0" fill="#f0f0f0" height="135.0" layoutY="3.0" stroke="#861919" strokeDashOffset="12.0" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeMiterLimit="14.0" strokeType="INSIDE" strokeWidth="0.0" styleClass="myShape" width="313.0">
                            <cursor>
@@ -126,7 +126,7 @@
                               <Image url="@../../images.png/octicon_location-16.png" />
                            </image>
                         </ImageView>
-                        <Button layoutX="214.0" layoutY="83.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="83.0" styleClass="ongoingStatus" stylesheets="@loginform.css" text="Resolved">
+                        <Button layoutX="214.0" layoutY="83.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="83.0" styleClass="ongoingStatus" stylesheets="@GeneralStylesheet.css" text="Ongoing..">
                            <font>
                               <Font name="HandoTrial-Regular" size="11.0" />
                            </font>
@@ -134,21 +134,21 @@
                         <Text layoutX="144.0" layoutY="108.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="defaultTxtBold" text="Status:" />
                      </children>
                   </Pane>
-                  <Pane layoutX="18.0" layoutY="196.0" prefHeight="134.0" prefWidth="311.0" styleClass="rectanglePhotos" stylesheets="@loginform.css">
+                  <Pane layoutX="18.0" layoutY="196.0" prefHeight="134.0" prefWidth="311.0" styleClass="rectanglePhotos" stylesheets="@GeneralStylesheet.css">
                      <children>
                         <Rectangle id="myShape" arcHeight="24.0" arcWidth="26.0" fill="#f0f0f0" height="135.0" layoutY="3.0" stroke="#861919" strokeDashOffset="12.0" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeMiterLimit="14.0" strokeType="INSIDE" strokeWidth="0.0" styleClass="myShape" width="313.0">
                            <cursor>
                               <Cursor fx:constant="DEFAULT" />
                            </cursor>
                         </Rectangle>
-                        <Text fill="#363636" layoutX="129.0" layoutY="37.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="recHeading" text="Reporting a Flood" wrappingWidth="155.3033905029297">
+                        <Text fill="#363636" layoutX="129.0" layoutY="37.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="recHeading" text="Road Problem" wrappingWidth="155.3033905029297">
                            <font>
                               <Font size="24.0" />
                            </font>
                         </Text>
                         <ImageView fitHeight="134.0" fitWidth="118.0" layoutX="-1.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
                            <image>
-                              <Image url="@../../images.png/ConcernScene.image3.png" />
+                              <Image url="@../../images.png/ConcernScene.image2.png" />
                            </image>
                         </ImageView>
                         <Text layoutX="129.0" layoutY="53.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="recsubHeading" text="by Rose Dawson" wrappingWidth="126.47006225585938">
@@ -166,7 +166,7 @@
                               <Image url="@../../images.png/octicon_location-16.png" />
                            </image>
                         </ImageView>
-                        <Button layoutX="214.0" layoutY="85.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="83.0" styleClass="pendingStatus" stylesheets="@../../styles/GeneralStylesheet.css" text="Resolved" />
+                        <Button layoutX="214.0" layoutY="85.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="83.0" styleClass="pendingStatus" stylesheets="@../../styles/GeneralStylesheet.css" text="Pending.." />
                         <Text layoutX="144.0" layoutY="110.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="defaultTxtBold" text="Status:" />
                      </children>
                   </Pane>

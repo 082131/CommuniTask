@@ -1,8 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
 
 <?import java.lang.String?>
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.Cursor?>
-<?import javafx.scene.control.Label?>
 <?import javafx.scene.control.ScrollPane?>
 <?import javafx.scene.effect.ColorAdjust?>
 <?import javafx.scene.image.Image?>
@@ -12,6 +12,7 @@
 <?import javafx.scene.layout.FlowPane?>
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
@@ -27,7 +28,7 @@
                            <center>
                               <Pane prefHeight="850.0" prefWidth="360.0" style="-fx-background-color: #FFFFFF;" styleClass="scrollPane" stylesheets="@../../styles/GeneralStylesheet.css" BorderPane.alignment="CENTER">
                                  <children>
-                                    <Text depthTest="DISABLE" layoutX="27.0" layoutY="75.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mabuhay!" wrappingWidth="181.13671875">
+                                    <Text depthTest="DISABLE" layoutX="24.0" layoutY="85.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mabuhay!" wrappingWidth="203.13671875">
                                        <font>
                                           <Font name="HandoTrial-Regular" size="36.0" />
                                        </font>
@@ -87,11 +88,11 @@
                                        <children>
                                           <ScrollPane hbarPolicy="NEVER" layoutY="-11.0" pannable="true" prefHeight="188.0" prefWidth="360.0" styleClass="scrollPane" stylesheets="@../../styles/GeneralStylesheet.css" vbarPolicy="ALWAYS" vvalue="0.45">
                                             <content>
-                                                <FlowPane prefHeight="180.0" prefWidth="717.0">
+                                                <FlowPane prefHeight="180.0" prefWidth="717.0" style="-fx-background-color: #FFFFFF;">
                                                    <children>
-                                                    <AnchorPane minHeight="0.0" minWidth="0.0" pickOnBounds="false" prefHeight="180.0" prefWidth="769.0">
+                                                    <AnchorPane minHeight="0.0" minWidth="0.0" pickOnBounds="false" prefHeight="180.0" prefWidth="769.0" style="-fx-background-color: #FFFFFF;">
                                                          <children>
-                                                            <Pane layoutY="-5.0" prefHeight="185.0" prefWidth="774.0">
+                                                            <Pane layoutY="-5.0" prefHeight="185.0" prefWidth="774.0" style="-fx-background-color: #FFFFFF;">
                                                                <children>
                                                                   <HBox alignment="CENTER" layoutX="-21.0" layoutY="9.0" prefHeight="180.0" prefWidth="698.0" styleClass="hbox">
                                                                      <children>
@@ -176,8 +177,8 @@
                                           <Font name="HandoTrial-Regular" size="10.0" />
                                        </font>
                                     </Text>
-                                    <Text layoutX="38.0" layoutY="483.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="defaultTxtItalicBold" text="Towards Smart City" />
-                                    <Text layoutX="56.0" layoutY="503.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="defaultTxtItalic" text="City of Malolos, Bulacan" textAlignment="CENTER" wrappingWidth="123.515625">
+                                    <Text layoutX="41.0" layoutY="483.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="defaultTxtItalicBold" text="Towards Smart City" />
+                                    <Text layoutX="43.0" layoutY="498.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="defaultTxtItalic" text="City of Malolos, Bulacan" textAlignment="CENTER" wrappingWidth="123.515625">
                                        <font>
                                           <Font size="11.0" />
                                        </font>
@@ -187,15 +188,34 @@
                                           <Font name="HandoTrial-Regular" size="11.0" />
                                        </font>
                                     </Text>
-                                    <Label fx:id="usernameLabel" layoutX="28.0" layoutY="81.0" prefHeight="17.0" prefWidth="151.0" stylesheets="@../../styles/ConcernScene.css" textFill="#aeadad">
-                                       <styleClass>
-                                          <String fx:value="defaultTxtBold" />
-                                          <String fx:value="subheading" />
-                                       </styleClass>
+                                    <Text boundsType="VISUAL" fill="#004aad" layoutX="27.0" layoutY="43.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Comm">
                                        <font>
-                                          <Font size="18.0" />
+                                          <Font size="31.0" />
                                        </font>
-                                    </Label>
+                                       <styleClass>
+                                          <String fx:value="txtTitle" />
+                                          <String fx:value="communiTaskTxt" />
+                                       </styleClass>
+                                    </Text>
+                                    <Text boundsType="VISUAL" fill="#e84949" layoutX="64.0" layoutY="43.0" strokeType="OUTSIDE" strokeWidth="0.0" text="uni">
+                                       <font>
+                                          <Font size="31.0" />
+                                       </font>
+                                       <styleClass>
+                                          <String fx:value="txtTitle" />
+                                          <String fx:value="communiTaskTxt" />
+                                       </styleClass>
+                                    </Text>
+                                    <Text boundsType="VISUAL" fill="#e69d1e" layoutX="82.0" layoutY="43.0" strokeType="OUTSIDE" strokeWidth="0.0" text="TASK" wrappingWidth="89.947265625">
+                                       <font>
+                                          <Font size="31.0" />
+                                       </font>
+                                       <styleClass>
+                                          <String fx:value="txtTitle" />
+                                          <String fx:value="communiTaskTxt" />
+                                       </styleClass>
+                                    </Text>
+                                    <Line endX="100.0" layoutX="126.0" layoutY="101.0" startX="-100.0" strokeWidth="0.3" />
                                  </children>
                               </Pane>
                            </center>
@@ -219,7 +239,7 @@
                            <children>
                               <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true" styleClass="iconBtn">
                                  <image>
-                                    <Image url="@../../images.png/Group.png" />
+                                    <Image url="@../../images.png/Group_1.png" />
                                  </image>
                                  <effect>
                                     <ColorAdjust />

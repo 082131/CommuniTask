@@ -11,7 +11,7 @@ import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
 
-public class HomeSceneController{ // implements Initializable
+public class HomeSceneController{ 
 
     @FXML
     private AnchorPane HomeScene;
@@ -23,28 +23,36 @@ public class HomeSceneController{ // implements Initializable
     private ImageView AccountScene;
     @FXML
     private Label usernameLabel;  
+    
     private Connection connection;
+    private String userEmail;
 
     public void initialize(){
         
-    String query = "SELECT first_name FROM users WHERE email = ?";    
-    try (Connection connection = database.getConnection();
-        PreparedStatement stmt = connection.prepareStatement(query);
-        ResultSet rs = stmt.executeQuery()) {
+    String query = "SELECT first_name FROM users WHERE email = ?";
+        try (Connection connection = database.getConnection(); 
+        PreparedStatement stmt = connection.prepareStatement(query)) {
+        
+            
+        stmt.setString(1, userEmail);  // Pass the actual user email here
 
-    if (rs.next()) {  
-        String firstName = rs.getString("first_name");  
+        try (ResultSet rs = stmt.executeQuery()) {
+            if (rs.next()) {
+                String firstName = rs.getString("first_name");
 
-        Platform.runLater(() -> {
-            usernameLabel.setText(firstName); // Set actual name, not a string literal
-        });
-    }
-    } catch (SQLException e) {
-            e.printStackTrace();
+                // Update the UI on the JavaFX Application thread
+                Platform.runLater(() -> {
+                    usernameLabel.setText(firstName);  // Set actual first name
+                });
+            } else {
+                System.out.println("No user found with the given email.");
+                }
+            }
+        } catch (SQLException e) {
+        e.printStackTrace();
         }
     }
         
-    
     @FXML
     private void concernBtn(MouseEvent event) {
         SceneSwitcher.switchScene(event, "ConcernScene.fxml");

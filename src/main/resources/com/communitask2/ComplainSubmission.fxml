@@ -23,22 +23,25 @@
       <top>
          <Pane prefHeight="640.0" prefWidth="360.0" style="-fx-background-color: #FFFFFF;" styleClass="txtDefault" stylesheets="@../../styles/complaintsubmission.css" BorderPane.alignment="CENTER">
             <children>
-                  <Label layoutX="31.0" layoutY="378.0" styleClass="txtDefaul" stylesheets="@../../styles/complaintsubmission.css" text="Photo:" />
+                  <Label layoutX="31.0" layoutY="392.0" styleClass="txtDefaul" stylesheets="@../../styles/complaintsubmission.css" text="Photo:" />
          
-                 <Button fx:id="submitButton" layoutX="27.0" layoutY="460.0" onMouseClicked="#recordInfo" prefHeight="25.0" prefWidth="304.0" styleClass="btnSubmit" stylesheets="@../../styles/complaintsubmission.css" text="Submit">
+                 <Button fx:id="submitButton" layoutX="27.0" layoutY="474.0" maxHeight="30.0" maxWidth="304.0" minHeight="30.0" minWidth="304.0" onMouseClicked="#recordInfo" prefHeight="30.0" prefWidth="304.0" styleClass="btnSubmit" stylesheets="@../../styles/complaintsubmission.css" text="Submit">
                   <font>
                      <Font name="HandoTrial-Bold" size="15.0" />
-                  </font></Button>
+                  </font>
+                  <cursor>
+                     <Cursor fx:constant="OPEN_HAND" />
+                  </cursor></Button>
                  <Label layoutX="74.0" layoutY="81.0" styleClass="txtTitle" stylesheets="@../../styles/complaintsubmission.css" text="Submit Complain" textAlignment="CENTER" textFill="#f2f2f2" />
-                  <Label layoutX="27.0" layoutY="237.0" styleClass="txtDefaul" stylesheets="@../../styles/complaintsubmission.css" text="Description:">
+                  <Label layoutX="27.0" layoutY="206.0" styleClass="txtDefaul" stylesheets="@../../styles/complaintsubmission.css" text="Description:">
                   <font>
                      <Font name="HandoTrial-Regular" size="11.0" />
                   </font></Label>
-                  <Label layoutX="25.0" layoutY="169.0" styleClass="txtDefaul" stylesheets="@../../styles/complaintsubmission.css" text="Complaint Title:">
+                  <Label layoutX="25.0" layoutY="138.0" styleClass="txtDefaul" stylesheets="@../../styles/complaintsubmission.css" text="Complain Title:">
                   <font>
                      <Font name="HandoTrial-Regular" size="12.0" />
                   </font></Label>
-                  <TextField fx:id="complaintTitleField" layoutX="27.0" layoutY="193.0" onMouseClicked="#recordInfo" prefHeight="30.0" prefWidth="309.0" promptText="  Enter the title of the complaint" styleClass="fieldDefault" stylesheets="@../../styles/complaintsubmission.css" />
+                  <TextField fx:id="complaintTitleField" layoutX="27.0" layoutY="162.0" prefHeight="30.0" prefWidth="309.0" promptText="  Enter the title of the complain" styleClass="fieldDefault" stylesheets="@../../styles/complaintsubmission.css" />
                <Text boundsType="VISUAL" fill="#004aad" layoutX="135.0" layoutY="59.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Comm">
                   <font>
                      <Font size="31.0" />
@@ -66,20 +69,23 @@
                      <String fx:value="communiTaskTxt" />
                   </styleClass>
                </Text>
-               <Label fx:id="uploadPhotoButton" layoutX="31.0" layoutY="399.0" onMouseClicked="#handleUploadPhoto" prefHeight="37.0" prefWidth="138.0" styleClass="btnDefault" stylesheets="@../../styles/complaintsubmission.css" text="Upload Photo">
+               <Label fx:id="uploadPhotoButton" layoutX="31.0" layoutY="413.0" onMouseClicked="#handleUploadPhoto" prefHeight="37.0" prefWidth="138.0" styleClass="btnDefault" stylesheets="@../../styles/complaintsubmission.css" text="Upload Photo">
                   <font>
                      <Font name="HandoTrial-Regular" size="11.0" />
                   </font></Label>
-               <ComboBox fx:id="TypeCB" layoutX="188.0" layoutY="400.0" maxHeight="35.0" maxWidth="146.0" prefHeight="35.0" prefWidth="146.0" promptText="Select a Type" styleClass="cbType" stylesheets="@../../styles/complaintsubmission.css" visibleRowCount="5">
+               <ComboBox fx:id="TypeCB" layoutX="188.0" layoutY="414.0" maxHeight="35.0" maxWidth="146.0" prefHeight="35.0" prefWidth="146.0" promptText="Select a Type" styleClass="cbType" stylesheets="@../../styles/complaintsubmission.css" visibleRowCount="5">
                   <cursor>
                      <Cursor fx:constant="OPEN_HAND" />
                   </cursor>
                </ComboBox>
-               <TextField fx:id="complainDescription" alignment="TOP_LEFT" layoutX="27.0" layoutY="258.0" prefHeight="100.0" prefWidth="310.0" promptText="  Enter the title of the complaint" styleClass="fieldDefault" stylesheets="@../../styles/complaintsubmission.css" />
-               <Button fx:id="cancelBtn" layoutX="27.0" layoutY="500.0" onMouseClicked="#backToMainScene" prefHeight="25.0" prefWidth="304.0" styleClass="btnCancel" stylesheets="@../../styles/complaintsubmission.css" text="Cancel">
+               <TextField fx:id="complainDescription" alignment="TOP_LEFT" layoutX="27.0" layoutY="227.0" prefHeight="100.0" prefWidth="310.0" promptText="Enter description" styleClass="fieldDefault" stylesheets="@../../styles/complaintsubmission.css" />
+               <Button fx:id="cancelBtn" layoutX="27.0" layoutY="514.0" maxHeight="30.0" maxWidth="304.0" minHeight="30.0" minWidth="304.0" onMouseClicked="#backToMainScene" prefHeight="30.0" prefWidth="304.0" styleClass="btnCancel" stylesheets="@../../styles/complaintsubmission.css" text="Cancel">
                   <font>
                      <Font name="HandoTrial-Bold" size="15.0" />
-                  </font></Button>
+                  </font>
+                  <cursor>
+                     <Cursor fx:constant="OPEN_HAND" />
+                  </cursor></Button>
                <ImageView fx:id="backBtn" fitHeight="33.0" fitWidth="42.0" layoutX="31.0" layoutY="32.0" onMouseClicked="#backToMainScene" pickOnBounds="true" preserveRatio="true">
                   <image>
                      <Image url="@../../images.png/backbutton.png" />
@@ -88,6 +94,22 @@
                      <Cursor fx:constant="OPEN_HAND" />
                   </cursor>
                </ImageView>
+               <Label layoutX="27.0" layoutY="338.0" styleClass="txtDefaul" stylesheets="@../../styles/complaintsubmission.css" text="Address">
+                  <font>
+                     <Font name="HandoTrial-Regular" size="12.0" />
+                  </font>
+               </Label>
+               <TextField fx:id="complainAddressField" layoutX="28.0" layoutY="358.0" prefHeight="30.0" prefWidth="309.0" promptText="  Enter location" styleClass="fieldDefault" stylesheets="@../../styles/complaintsubmission.css" />
+               <Label fx:id="errMess" layoutX="32.0" layoutY="454.0" prefHeight="15.0" prefWidth="135.0" styleClass="errMess" stylesheets="@../../styles/GeneralStylesheet.css">
+                  <font>
+                     <Font size="10.0" />
+                  </font>
+               </Label>
+               <Label fx:id="successMes" layoutX="27.0" layoutY="553.0" prefHeight="20.0" prefWidth="239.0" styleClass="successMess" stylesheets="@../../styles/complaintsubmission.css">
+                  <font>
+                     <Font size="10.0" />
+                  </font>
+               </Label>
             </children>
          </Pane>
       </top>

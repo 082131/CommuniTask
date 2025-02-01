@@ -21,8 +21,10 @@ import javafx.scene.image.ImageView;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.control.CheckBox;
 import javafx.scene.control.DatePicker;
 import javafx.scene.control.Label;
+import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
@@ -43,6 +45,12 @@ public class LoginController implements Initializable {
     private ComboBox<Integer> AgeCB;
     @FXML
     private TextField PasswordRegisField;
+    @FXML
+    private TextField visiblePasswordField;
+    @FXML
+    private PasswordField passwordLoginField;
+    @FXML
+    private CheckBox showPasswordCheckBox;
     @FXML
     private Button CreateAccBtn;
     @FXML
@@ -68,8 +76,6 @@ public class LoginController implements Initializable {
     @FXML
     private TextField emailLogInField;
     @FXML
-    private TextField passwordLoginField;
-    @FXML
     private Label errMess2;
     @FXML
     private Pane RegisterPane2;
@@ -83,9 +89,8 @@ public class LoginController implements Initializable {
     private TextField SurnameField;
     @FXML
     private DatePicker DatePicker;
-    /**
-     * Initializes the controller class.
-     */
+    @FXML
+    private TextField ContactNum;
 
     public void initialize(URL url, ResourceBundle rb) {
         ObservableList<Integer> ages = FXCollections.observableArrayList();
@@ -108,11 +113,25 @@ public class LoginController implements Initializable {
     public static String getLoggedInUserEmail() {
         return loggedInUserEmail;
     }
+    @FXML
+    private void togglePasswordVisibility(ActionEvent event) {
+        if (showPasswordCheckBox.isSelected()) {
+            // Show the password in plain text
+            visiblePasswordField.setText(passwordLoginField.getText());
+            visiblePasswordField.setVisible(true);
+            passwordLoginField.setVisible(false);
+        } else {
+            // Hide the password with asterisks
+            passwordLoginField.setText(visiblePasswordField.getText());
+            passwordLoginField.setVisible(true);
+            visiblePasswordField.setVisible(false);
+        }
+    }
 
     @FXML
     private void buttonHandler(ActionEvent event) throws IOException {
         String email = emailLogInField.getText().trim();
-        String password = passwordLoginField.getText().trim();
+        String password = showPasswordCheckBox.isSelected() ? visiblePasswordField.getText().trim() : passwordLoginField.getText().trim();
 
         if (email.isEmpty() || password.isEmpty()) {
             errMess1.setText("Please fill all blank fields");
@@ -127,8 +146,38 @@ public class LoginController implements Initializable {
         }
     }
 
-    private boolean validateLogin(String email, String password) {
-        String selectUserSQL = "SELECT password FROM users WHERE email = ?;";
+    /**
+     *
+     */
+    public class SaveUserInfo{
+        public boolean saveUser(User user) {
+        String insertSQL = "INSERT INTO users (first_name, middle_name, surname, email, password, age, marital_status, birthday, barangay, contactnum) " 
+                + "VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
+
+        try (Connection connection = database.getConnection();
+             PreparedStatement preparedStatement = connection.prepareStatement(insertSQL)) {
+
+            preparedStatement.setString(1, user.getFirstName());
+            preparedStatement.setString(2, user.getMiddleName());
+            preparedStatement.setString(3, user.getSurname());
+            preparedStatement.setString(4, user.getEmail());
+            preparedStatement.setString(5, user.getHashedPassword());
+            preparedStatement.setInt(6, user.getAge());
+            preparedStatement.setString(7, user.getMaritalStatus());
+            preparedStatement.setString(8, user.getBirthday());
+            preparedStatement.setString(9, user.getBarangay());
+            preparedStatement.setString(10, user.getContactNumber());
+
+            return preparedStatement.executeUpdate() > 0;
+        } catch (SQLException e) {
+            e.printStackTrace();
+            return false;
+            }
+        }
+    }
+
+    public boolean validateLogin(String email, String password) {
+        String selectUserSQL = "SELECT password FROM users WHERE email = ?";
         try (Connection connect = database.getConnection();
              PreparedStatement prepare = connect.prepareStatement(selectUserSQL)) {
 
@@ -136,31 +185,13 @@ public class LoginController implements Initializable {
             try (ResultSet rs = prepare.executeQuery()) {
                 if (rs.next()) {
                     String storedHashedPassword = rs.getString("password");
-
-                    // Debugging output
-                    System.out.println("Stored Hash: " + storedHashedPassword);
-                    System.out.println("Entered Password: " + password);
-
-                    if (BCrypt.checkpw(password, storedHashedPassword)) {
-                        System.out.println("Login successful!");
-                        return true; // Password is correct
-                    } else {
-                        System.out.println("Incorrect password!");
-                        return false; // Incorrect password
-                    }
-                } else {
-                    System.out.println("User not found!");
-                    return false; // User does not exist
+                    return BCrypt.checkpw(password, storedHashedPassword);
                 }
-            } catch (SQLException e) {
-                System.err.println("Error during ResultSet processing: " + e.getMessage());
-                return false; // Handle any issues with ResultSet access
             }
         } catch (SQLException e) {
-            System.err.println("Error during login validation: " + e.getMessage());
-            errMess1.setText("An error occurred during login. Please try again.");
-            return false; // Handle connection or query issues
+            e.printStackTrace();
         }
+        return false;
     }
 
     private boolean extracted() {
@@ -187,7 +218,7 @@ public class LoginController implements Initializable {
     private void CreateAccount(MouseEvent event) {
         System.out.println("CreateAccount button clicked!"); // Debugging
         if(toDatabase()){
-            SceneSwitcher.switchScene(event, "HomeScene.fxml");
+            SceneSwitcher.switchScene(event, "Login.fxml");
         }
     }
 
@@ -200,6 +231,7 @@ public class LoginController implements Initializable {
         String confirmPassword = ConfirmPasswordField.getText().trim();
         String barangay = Barangay.getText().trim();
         Integer age = AgeCB.getValue();
+        String contactnum = ContactNum.getText().trim();
         String maritalStatus = MaritalCB.getValue();
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd-MM-yyyy");
         String birthday = DatePicker.getValue()!= null ? DatePicker.getValue().format(formatter) : null;
@@ -215,7 +247,7 @@ public class LoginController implements Initializable {
             return false;
         }
         String hashedPassword = BCrypt.hashpw(password, BCrypt.gensalt());
-        String insertSQL = "INSERT INTO users (first_name, middle_name, surname, email, password, age, marital_status, birthday, barangay) " + "VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)";
+        String insertSQL = "INSERT INTO users (first_name, middle_name, surname, email, password, age, marital_status, birthday, barangay, contactnum) " + "VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
 
         try (Connection connection = database.getConnection();
              PreparedStatement preparedStatement = connection.prepareStatement(insertSQL)) {
@@ -229,6 +261,7 @@ public class LoginController implements Initializable {
             preparedStatement.setString(7, maritalStatus);
             preparedStatement.setString(8, birthday);
             preparedStatement.setString(9, barangay);
+            preparedStatement.setString(10, contactnum);
 
             int rowsInserted = preparedStatement.executeUpdate();
             if (rowsInserted > 0) {
